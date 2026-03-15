@@ -280,6 +280,27 @@ body {
    12. モバイル対応
    ============================================ */
 @media (max-width: 599px) {
+  /* メインビジュアル — 見切れを軽減 */
+  .p-mainVisual__slide,
+  .p-mainVisual__inner {
+    height: 50vw !important;
+    min-height: 50vw !important;
+    max-height: 50vw !important;
+  }
+  .p-mainVisual__img img {
+    object-position: center center !important;
+  }
+  /* メインビジュアルのテキストを「ふたりだから、」で折り返し */
+  .p-mainVisual__slideTitle,
+  .p-mainVisual .p-mainVisual__slideTitle,
+  .p-mainVisual__textLayer .p-mainVisual__slideTitle,
+  .p-mainVisual__slide .p-mainVisual__slideTitle {
+    max-width: 7.5em !important;
+    word-break: keep-all !important;
+    overflow-wrap: normal !important;
+    line-height: 1.4 !important;
+  }
+
   .post_content h2 {
     font-size: 1.2rem;
     padding: 0.6em 0.8em;
