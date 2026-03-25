@@ -3,9 +3,9 @@
 # 使い方: bash list-slugs.sh
 # 内部リンクを張る前にスラッグを確認する用途
 
-# .envからWP認証情報を読む（sourceは使わない）
-WP_USERNAME=dinksadmin
-WP_APP_PASSWORD="25BN Vx1K BjCm iFsD RIcl 0lhL"
+# .envからWP認証情報を読む
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+eval "$(bash "$SCRIPT_DIR/wp-env.sh")"
 
 echo "=== 公開済み記事スラッグ一覧 ==="
 echo ""
