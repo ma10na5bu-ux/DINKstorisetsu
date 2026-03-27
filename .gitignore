@@ -23,9 +23,6 @@ npm-debug.log*
 .DS_Store
 Thumbs.db
 
-# アーカイブ（旧部署）
-_archive/
-
 # WordPress
 wp-content/
 *.sql
