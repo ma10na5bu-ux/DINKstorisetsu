@@ -25,7 +25,7 @@ fi
 while IFS='=' read -r key value; do
   # コメント行・空行をスキップ
   [[ "$key" =~ ^#.*$ || -z "$key" ]] && continue
-  # 値の前後の空白を除去
-  value=$(echo "$value" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+  # 値の前後の空白とクォートを除去
+  value=$(echo "$value" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//;s/^"//;s/"$//')
   echo "export $key=\"$value\""
 done < "$ENV_FILE"
