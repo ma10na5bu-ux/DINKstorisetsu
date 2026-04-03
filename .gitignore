@@ -27,6 +27,10 @@ Thumbs.db
 wp-content/
 *.sql
 
+# Python
+__pycache__/
+*.pyc
+
 # その他
 *.log
 *.tmp
