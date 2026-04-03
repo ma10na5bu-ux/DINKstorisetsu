@@ -326,6 +326,13 @@ def main():
         )
         if status == 200:
             print(f"\n公開完了: {result['link']}")
+            # スラッグキャッシュ自動更新
+            slug = result.get('slug', '')
+            title = result.get('title', {}).get('rendered', '')
+            if slug and title:
+                list_slugs = os.path.join(SCRIPT_DIR, 'list-slugs.sh')
+                subprocess.run(['bash', list_slugs, '--add', slug, title],
+                               capture_output=True, text=True)
         else:
             print(f"公開失敗: HTTP {status}", file=sys.stderr)
     else:
