@@ -1,5 +1,5 @@
 /* ============================================
-   DINKsのトリセツ — SWELL カスタムCSS
+   デカ太郎ラボ — SWELL カスタムCSS
 
    適用方法：
    WordPress管理画面 → 外観 → カスタマイズ → 追加CSS
@@ -10,75 +10,69 @@
    1. CSS変数（カラーパレット）
    ============================================ */
 :root {
-  --dinks-primary: #5B8C5A;
-  --dinks-primary-dark: #3D6B3C;
-  --dinks-primary-light: #E8F0E8;
-  --dinks-accent: #E8927C;
-  --dinks-accent-light: #FFF0EC;
-  --dinks-sub-accent: #D4A843;
-  --dinks-bg: #FDFBF7;
-  --dinks-surface: #FFFFFF;
-  --dinks-text: #333333;
-  --dinks-text-light: #666666;
-  --dinks-border: #E5E0DA;
-  --dinks-radius: 8px;
+  --deka-primary: #5B8C5A;
+  --deka-primary-dark: #3D6B3C;
+  --deka-primary-light: #E8F0E8;
+  --deka-accent: #E8927C;
+  --deka-bg: #FDFBF7;
+  --deka-surface: #FFFFFF;
+  --deka-text: #333333;
+  --deka-text-light: #666666;
+  --deka-border: #E5E0DA;
+  --deka-radius: 8px;
 }
 
 /* ============================================
    2. 全体の背景・テキスト
    ============================================ */
 body {
-  background-color: var(--dinks-bg);
-  color: var(--dinks-text);
+  background-color: var(--deka-bg);
+  color: var(--deka-text);
 }
 
 /* ============================================
    3. ヘッダー
    ============================================ */
-/* ヘッダー上部バー（キャッチフレーズ）— フッターと同じ緑に統一 */
 .l-header__bar {
-  background: var(--dinks-primary-dark) !important;
+  background: var(--deka-primary-dark) !important;
 }
 
 .l-header {
-  background-color: var(--dinks-surface);
+  background-color: var(--deka-surface);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
 }
 
-/* サイトタイトル */
 .c-headLogo__txt,
 .c-headLogo a {
-  color: var(--dinks-primary-dark);
+  color: var(--deka-primary-dark);
   font-weight: 900;
   letter-spacing: 0.02em;
 }
 
-/* キャッチフレーズ */
 .c-headLogo__desc {
-  color: var(--dinks-text-light);
+  color: var(--deka-text-light);
   font-size: 0.75rem;
 }
 
-/* グローバルナビ */
 .c-gnav a {
-  color: var(--dinks-text);
+  color: var(--deka-text);
   font-weight: 500;
   transition: color 0.2s;
 }
 .c-gnav a:hover {
-  color: var(--dinks-primary);
+  color: var(--deka-primary);
 }
 .c-gnav .c-gnav__item.current a {
-  color: var(--dinks-primary);
-  border-bottom: 2px solid var(--dinks-primary);
+  color: var(--deka-primary);
+  border-bottom: 2px solid var(--deka-primary);
 }
 
 /* ============================================
    4. 記事カード（トップページ一覧）
    ============================================ */
 .p-postList__item {
-  background-color: var(--dinks-surface);
-  border-radius: var(--dinks-radius);
+  background-color: var(--deka-surface);
+  border-radius: var(--deka-radius);
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   transition: transform 0.2s, box-shadow 0.2s;
@@ -88,26 +82,23 @@ body {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
 
-/* 記事タイトル（カード内） */
 .p-postList__title {
-  color: var(--dinks-text);
+  color: var(--deka-text);
   font-weight: 700;
   line-height: 1.5;
 }
 
-/* カテゴリラベル */
 .c-categoryBadge,
 .c-postThumb__cat {
-  background-color: var(--dinks-primary);
+  background-color: var(--deka-primary);
   color: #fff;
   font-size: 0.7rem;
   font-weight: 600;
   border-radius: 3px;
 }
 
-/* 日付 */
 .p-postList__date {
-  color: var(--dinks-text-light);
+  color: var(--deka-text-light);
   font-size: 0.8rem;
 }
 
@@ -123,68 +114,93 @@ body {
   margin-bottom: 1.6em;
 }
 
-/* H2 見出し — 左ボーダー＋背景 */
 .post_content h2 {
-  background-color: var(--dinks-primary-light);
-  border-left: 5px solid var(--dinks-primary);
+  background-color: var(--deka-primary-light);
+  border-left: 5px solid var(--deka-primary);
   padding: 0.8em 1em;
   margin: 2.5em 0 1.2em;
   font-size: 1.4rem;
   font-weight: 700;
-  color: var(--dinks-text);
-  border-radius: 0 var(--dinks-radius) var(--dinks-radius) 0;
+  color: var(--deka-text);
+  border-radius: 0 var(--deka-radius) var(--deka-radius) 0;
 }
 
-/* H3 見出し — 下線アクセント */
 .post_content h3 {
-  border-bottom: 3px solid var(--dinks-accent);
+  border-bottom: 3px solid var(--deka-accent);
   padding-bottom: 0.4em;
   margin: 2em 0 1em;
   font-size: 1.2rem;
   font-weight: 700;
-  color: var(--dinks-text);
+  color: var(--deka-text);
 }
 
-/* H4 見出し */
 .post_content h4 {
-  color: var(--dinks-primary-dark);
+  color: var(--deka-primary-dark);
   font-weight: 700;
   margin: 1.5em 0 0.8em;
 }
 
-/* リンク */
 .post_content a {
-  color: var(--dinks-primary);
+  color: var(--deka-primary);
   text-decoration: underline;
-  text-decoration-color: var(--dinks-primary-light);
+  text-decoration-color: var(--deka-primary-light);
   text-underline-offset: 3px;
   transition: color 0.2s, text-decoration-color 0.2s;
 }
 .post_content a:hover {
-  color: var(--dinks-accent);
-  text-decoration-color: var(--dinks-accent);
+  color: var(--deka-accent);
+  text-decoration-color: var(--deka-accent);
 }
 
-/* リスト */
 .post_content ul li::marker {
-  color: var(--dinks-primary);
+  color: var(--deka-primary);
 }
 .post_content ol li::marker {
-  color: var(--dinks-primary);
+  color: var(--deka-primary);
   font-weight: 700;
 }
 
-/* ボックス装飾（SWELLのブロック） */
 .swell-block-box {
-  border-radius: var(--dinks-radius);
+  border-radius: var(--deka-radius);
+}
+
+/* ============================================
+   5b. 太字＋黄色マーカー（本文中の強調）
+   ============================================ */
+.post_content strong {
+  background: linear-gradient(transparent 60%, #FFF9C4 60%);
+  font-weight: 700;
 }
 
 /* ============================================
    6. ふきだし
    ============================================ */
-/* ふきだし全体の余白 */
 .swell-block-balloon {
   margin: 1.5em 0;
+}
+
+/* デカ太郎（左・グリーン） → パレットのプライマリ系 */
+.swell-block-balloon.-green .c-balloon__body {
+  background-color: var(--deka-primary-light) !important;
+  border-color: var(--deka-primary) !important;
+}
+.swell-block-balloon.-green .c-balloon__body::before {
+  border-right-color: var(--deka-primary) !important;
+}
+.swell-block-balloon.-green .c-balloon__body::after {
+  border-right-color: var(--deka-primary-light) !important;
+}
+
+/* ヨメ氏（右・レッド） → パレットのアクセント系 */
+.swell-block-balloon.-red .c-balloon__body {
+  background-color: #FCEAE5 !important;
+  border-color: var(--deka-accent) !important;
+}
+.swell-block-balloon.-red .c-balloon__body::before {
+  border-left-color: var(--deka-accent) !important;
+}
+.swell-block-balloon.-red .c-balloon__body::after {
+  border-left-color: #FCEAE5 !important;
 }
 
 /* ============================================
@@ -192,7 +208,7 @@ body {
    ============================================ */
 .swell-block-button a,
 .wp-block-button__link {
-  background-color: var(--dinks-accent);
+  background-color: var(--deka-accent);
   color: #fff;
   border-radius: 30px;
   font-weight: 700;
@@ -207,18 +223,18 @@ body {
 }
 
 /* ============================================
-   8. サイドバー（使う場合）
+   8. サイドバー
    ============================================ */
 .l-sidebar .widget {
-  background-color: var(--dinks-surface);
-  border-radius: var(--dinks-radius);
+  background-color: var(--deka-surface);
+  border-radius: var(--deka-radius);
   padding: 1.5rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 .l-sidebar .widget-title {
-  color: var(--dinks-primary-dark);
+  color: var(--deka-primary-dark);
   font-weight: 700;
-  border-bottom: 2px solid var(--dinks-primary);
+  border-bottom: 2px solid var(--deka-primary);
   padding-bottom: 0.3em;
   margin-bottom: 1em;
   font-size: 1rem;
@@ -228,7 +244,7 @@ body {
    9. フッター
    ============================================ */
 .l-footer {
-  background-color: var(--dinks-primary-dark);
+  background-color: var(--deka-primary-dark);
   color: rgba(255, 255, 255, 0.85);
 }
 .l-footer a {
@@ -236,7 +252,7 @@ body {
   transition: color 0.2s;
 }
 .l-footer a:hover {
-  color: var(--dinks-accent);
+  color: var(--deka-accent);
 }
 .copyright {
   color: rgba(255, 255, 255, 0.6);
@@ -247,31 +263,30 @@ body {
    10. 目次（SWELL標準）
    ============================================ */
 .p-toc {
-  background-color: var(--dinks-primary-light);
+  background-color: var(--deka-primary-light);
   border: none;
-  border-radius: var(--dinks-radius);
+  border-radius: var(--deka-radius);
   padding: 1.5rem 2rem;
 }
 .p-toc__ttl {
-  color: var(--dinks-primary-dark);
+  color: var(--deka-primary-dark);
   font-weight: 700;
 }
 .p-toc a {
-  color: var(--dinks-text);
+  color: var(--deka-text);
 }
 .p-toc a:hover {
-  color: var(--dinks-primary);
+  color: var(--deka-primary);
 }
 
 /* ============================================
    11. 関連記事・記事下エリア
    ============================================ */
 .p-relatedPosts__title {
-  color: var(--dinks-primary-dark);
+  color: var(--deka-primary-dark);
   font-weight: 700;
 }
 
-/* SNSシェアボタンエリア */
 .c-shareBtns {
   margin: 2.5em 0;
 }
@@ -280,27 +295,6 @@ body {
    12. モバイル対応
    ============================================ */
 @media (max-width: 599px) {
-  /* メインビジュアル — 見切れを軽減 */
-  .p-mainVisual__slide,
-  .p-mainVisual__inner {
-    height: 50vw !important;
-    min-height: 50vw !important;
-    max-height: 50vw !important;
-  }
-  .p-mainVisual__img img {
-    object-position: center center !important;
-  }
-  /* メインビジュアルのテキストを「ふたりだから、」で折り返し */
-  .p-mainVisual__slideTitle,
-  .p-mainVisual .p-mainVisual__slideTitle,
-  .p-mainVisual__textLayer .p-mainVisual__slideTitle,
-  .p-mainVisual__slide .p-mainVisual__slideTitle {
-    max-width: 7.5em !important;
-    word-break: keep-all !important;
-    overflow-wrap: normal !important;
-    line-height: 1.4 !important;
-  }
-
   .post_content h2 {
     font-size: 1.2rem;
     padding: 0.6em 0.8em;
@@ -317,15 +311,15 @@ body {
    13. タグ・カテゴリページ
    ============================================ */
 .c-tagList a {
-  background-color: var(--dinks-primary-light);
-  color: var(--dinks-primary-dark);
+  background-color: var(--deka-primary-light);
+  color: var(--deka-primary-dark);
   border-radius: 20px;
   padding: 0.3em 0.8em;
   font-size: 0.8rem;
   transition: background-color 0.2s;
 }
 .c-tagList a:hover {
-  background-color: var(--dinks-primary);
+  background-color: var(--deka-primary);
   color: #fff;
 }
 
@@ -333,10 +327,10 @@ body {
    14. ページネーション
    ============================================ */
 .c-pagination .page-numbers {
-  border-radius: var(--dinks-radius);
+  border-radius: var(--deka-radius);
 }
 .c-pagination .page-numbers.current {
-  background-color: var(--dinks-primary);
+  background-color: var(--deka-primary);
   color: #fff;
 }
 
@@ -344,8 +338,8 @@ body {
    15. ブログカード（内部リンク）
    ============================================ */
 .p-blogCard {
-  border: 1px solid var(--dinks-border);
-  border-radius: var(--dinks-radius);
+  border: 1px solid var(--deka-border);
+  border-radius: var(--deka-radius);
   transition: box-shadow 0.2s;
 }
 .p-blogCard:hover {
@@ -359,20 +353,44 @@ body {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--dinks-bg);
+  background: var(--deka-bg);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--dinks-border);
+  background: var(--deka-border);
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--dinks-text-light);
+  background: var(--deka-text-light);
 }
 
 /* ============================================
-   17. セレクション（テキスト選択時の色）
+   17. 記事スライダー（トップページ上部）
+   ============================================ */
+.p-postSlider .swiper-slide .p-postSlider__img::after,
+.p-mainVisual__slide .p-postSlider__img::after,
+.post-slide .c-postThumb::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60%;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.5) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.p-postSlider .p-postSlider__title,
+.p-postSlider .p-postSlider__date {
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* ============================================
+   18. セレクション（テキスト選択時の色）
    ============================================ */
 ::selection {
-  background-color: var(--dinks-primary-light);
-  color: var(--dinks-text);
+  background-color: var(--deka-primary-light);
+  color: var(--deka-text);
 }
