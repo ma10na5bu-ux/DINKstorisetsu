@@ -26,8 +26,12 @@ def convert_inline(text):
         r'<a href="\2">\1</a>',
         text
     )
-    # 太字 **text** → <strong>text</strong>
-    text = re.sub(r'\*\*([^*]+)\*\*', r'<strong>\1</strong>', text)
+    # 太字 **text** → SWELL黄色マーカー＋太字
+    text = re.sub(
+        r'\*\*([^*]+)\*\*',
+        r'<span class="swl-marker mark_yellow"><strong>\1</strong></span>',
+        text
+    )
     return text
 
 
