@@ -42,8 +42,68 @@ def is_metadata_line(line):
     )
 
 
+def strip_yaml_frontmatter(md_text):
+    """YAMLフロントマター（---で囲まれたブロック）を除去する"""
+    if md_text.startswith('---'):
+        # 2つ目の---を探す
+        end = md_text.find('\n---', 3)
+        if end != -1:
+            # フロントマター後の本文を返す
+            return md_text[end + 4:].lstrip('\n')
+    return md_text
+
+
+def convert_table(lines, start_index):
+    """Markdownテーブルを wp:table ブロックに変換する。
+    start_index: テーブルヘッダー行のインデックス。
+    戻り値: (WPブロックHTML文字列, 消費した行数)
+    """
+    i = start_index
+    rows = []
+
+    while i < len(lines) and lines[i].strip().startswith('|'):
+        row_text = lines[i].strip()
+        # 先頭と末尾の | を除去してセル分割
+        cells = [c.strip() for c in row_text.strip('|').split('|')]
+        rows.append(cells)
+        i += 1
+
+    if len(rows) < 2:
+        return None, 0
+
+    # 2行目がセパレータ（---）かチェック
+    is_separator = all(re.match(r'^-+$', c.strip()) for c in rows[1])
+    if not is_separator:
+        return None, 0
+
+    header = rows[0]
+    body_rows = rows[2:]  # セパレータ行をスキップ
+
+    # HTML生成
+    thead_cells = ''.join(f'<th>{convert_inline(c)}</th>' for c in header)
+    thead = f'<thead><tr>{thead_cells}</tr></thead>'
+
+    tbody_rows = []
+    for row in body_rows:
+        td_cells = ''.join(f'<td>{convert_inline(c)}</td>' for c in row)
+        tbody_rows.append(f'<tr>{td_cells}</tr>')
+    tbody = f'<tbody>{"".join(tbody_rows)}</tbody>'
+
+    table_html = (
+        '<!-- wp:table -->\n'
+        f'<figure class="wp-block-table"><table>{thead}{tbody}</table></figure>\n'
+        '<!-- /wp:table -->'
+    )
+
+    consumed = i - start_index
+    return table_html, consumed
+
+
 def convert_md_to_wp_blocks(md_text):
     """MarkdownテキストをWPブロックHTMLに変換"""
+    # YAMLフロントマターを除去
+    md_text = strip_yaml_frontmatter(md_text)
+
     lines = md_text.split('\n')
     blocks = []
     i = 0
@@ -64,7 +124,7 @@ def convert_md_to_wp_blocks(md_text):
             i += 1
             continue
 
-        # メタデータ行スキップ
+        # メタデータ行スキップ（旧形式との互換）
         if is_metadata_line(stripped):
             in_metadata = True
             i += 1
@@ -80,6 +140,14 @@ def convert_md_to_wp_blocks(md_text):
             # 本文中の---はスキップ（WPではH2で十分区切れる）
             i += 1
             continue
+
+        # Markdownテーブル（| で始まる行）
+        if stripped.startswith('|'):
+            table_html, consumed = convert_table(lines, i)
+            if table_html:
+                blocks.append(table_html)
+                i += consumed
+                continue
 
         # HTMLコメント行（wp:loos/balloon等）はそのまま通す
         if stripped.startswith('<!-- wp:'):
