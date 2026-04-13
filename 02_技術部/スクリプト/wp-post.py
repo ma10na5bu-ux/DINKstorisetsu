@@ -197,20 +197,37 @@ def convert_md_to_wp(md_path):
 
 
 def extract_metadata(md_path):
-    """Markdownファイルからメタデータを抽出"""
+    """Markdownファイルからメタデータを抽出（YAMLフロントマター対応）"""
     meta = {}
     with open(md_path, 'r', encoding='utf-8') as f:
-        for line in f:
-            line = line.strip()
-            if line.startswith('# ') and not line.startswith('## '):
-                meta['title'] = line[2:]
-            elif line.startswith('**メタディスクリプション**:'):
-                meta['excerpt'] = line.split(':', 1)[1].strip()
-            elif line.startswith('**スラッグ**:'):
-                meta['slug'] = line.split(':', 1)[1].strip()
-            elif line.startswith('---'):
-                if 'title' in meta:
-                    break
+        content = f.read()
+
+    # YAMLフロントマター（---で囲まれたブロック）を優先パース
+    fm_match = re.match(r'^---\s*\n(.*?)\n---', content, re.DOTALL)
+    if fm_match:
+        for line in fm_match.group(1).splitlines():
+            if ':' not in line:
+                continue
+            key, _, val = line.partition(':')
+            key = key.strip()
+            val = val.strip().strip('"\'')
+            if key == 'title':
+                meta['title'] = val
+            elif key == 'slug':
+                meta['slug'] = val
+            elif key == 'meta_description':
+                meta['excerpt'] = val
+        return meta
+
+    # フォールバック: Markdown見出し形式
+    for line in content.splitlines():
+        line = line.strip()
+        if line.startswith('# ') and not line.startswith('## '):
+            meta['title'] = line[2:]
+        elif line.startswith('**メタディスクリプション**:'):
+            meta['excerpt'] = line.split(':', 1)[1].strip()
+        elif line.startswith('**スラッグ**:'):
+            meta['slug'] = line.split(':', 1)[1].strip()
     return meta
 
 
@@ -347,7 +364,7 @@ def main():
     print(f"  アイキャッチ: {verify.get('featured_media')}", file=sys.stderr)
     print(f"  ふきだし: {raw.count('loos/balloon')}ブロック", file=sys.stderr)
     print(f"  H2: {raw.count('<h2>')}個", file=sys.stderr)
-    print(f"  内部リンク: {raw.count('dinks-torisetsu.fun/')}本", file=sys.stderr)
+    print(f"  内部リンク: {raw.count('dekataro.com/')}本", file=sys.stderr)
 
 
 if __name__ == '__main__':

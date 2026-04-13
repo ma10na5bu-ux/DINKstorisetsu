@@ -27,9 +27,9 @@
 - GitHub: https://github.com/ma10na5bu-ux/DINKstorisetsu（※リポ名変更予定）
 - Slack: #dinksトリセツ（Shibamediaワークスペース）
 
-### Notion IDキャッシュ（毎回検索不要）
-- ネタ帳（統合）DB: `e306a6929d16453e9477d6ed86b56a6e`
-- ネタ帳 collection: `collection://142792f5-a9ba-461d-8b52-5d5cc2dd5470`
+### ネタ帳
+- ローカルファイルで管理: `01_編集部/ネタ帳.md`
+- Notionは参照しない（2026-04-13移行済み）
 
 ### Gemini MCP連携
 - テキスト系（レビュー・校正）: Gemini MCP or curl直接（gemini-2.5-flash）
@@ -167,10 +167,8 @@ dekataro/
 ## 制作フロー
 
 ### Phase 1: ネタ選び＋ヒアリング（✅承認①）
-1. プリフライトチェック（WP認証・`.env` の `NOTION_TOKEN` 存在確認）
-2. Notionネタ帳から候補取得（collection IDはCLAUDE.mdのIDキャッシュを使う。検索不要）
-   - notion-search で `data_source_url=collection://142792f5...` + クエリ「ブログ」を指定
-   - 返ってきた全ページIDを**1バッチで並列フェッチ**してステータスを確認
+1. プリフライトチェック（`.env` の WP認証キー存在確認のみ。Notionチェック不要）
+2. `01_編集部/ネタ帳.md` を読み込んで💡アイデア欄から候補を抽出（ファイル1回読むだけ）
 3. 候補＋ヒアリングテンプレートをセットで提示
 4. デカ太郎が選択＋回答（1往復で完結）
 
@@ -188,9 +186,14 @@ dekataro/
 
 ### Phase 4: 公開（全自動）
 13. 画像アップロード（curl -F multipart形式。--data-binaryはWAF 403）
-14. wp-post.py で記事投稿
-15. 公開
-16. Notionネタ帳更新（ステータス🚀・URL・タイトル同時更新）
+14. wp-post.py で記事投稿（**必ず `--auto --publish --media <ID>` を付ける**）
+    ```
+    python3 02_技術部/スクリプト/wp-post.py "原稿ファイル.md" --auto --publish --media <画像ID>
+    ```
+    - `--auto`: YAMLフロントマターからtitle・slug・meta_descriptionを自動読み込み（必須）
+    - `--media`: アイキャッチのmedia ID（`--eyecatch-id`は存在しない）
+15. 公開後にtitle・slug・linkをAPIで確認。スラッグが`{id}-2`等になっていたら即修正
+16. `01_編集部/ネタ帳.md` を更新（アイデア欄から削除→公開済み欄に追記）
 17. git commit + push
 
 ### 派生記事
