@@ -152,10 +152,37 @@ dekataro/
 - 画像alt属性は必ず設定
 
 ### アイキャッチ画像
-- アニメチック・コミック的なイラストスタイル
-- 暮らしのシーンをポップに描く
-- プロンプトは英語＋9セクション構成
 - トリミング: trim-eyecatch.py（右200px・下140pxクロップ → 1200×630）
+- プロンプトファイルは `01_編集部/画像/{slug}_eyecatch_prompt.md` に保存
+- `アイキャッチ画像プロンプト集.md` は読み込み不要。以下のテンプレートを使う:
+
+```
+Draw a wide illustration (16:9 aspect ratio, 1200×630px).
+
+【Scene】
+{{記事の場面を英語で。夫婦30代・豆柴を自然に配置。右下15%は重要要素を置かない}}
+
+【Art Style】
+- Flat vector illustration style, NOT anime
+- Minimal line work, soft rounded shapes
+- Similar to modern web/app illustration (like Notion or Slack illustrations)
+
+【Color Palette — STRICT】
+- Background: soft warm gray (#F5F0EB)
+- Primary: muted sage green (#8BA888)
+- Secondary: warm beige (#D4C5B2)
+- Accent (minimal use): soft coral (#D4907E)
+- NO bright red, NO bright blue, NO vivid yellow
+
+【Composition】
+- Clean and simple, lots of white space / Key elements centered
+- IMPORTANT: Do NOT place any important elements in the bottom-right corner
+
+【Rules】
+- No text, no watermarks, no logos
+- Keep all important elements within the center 60% of the image
+- Overall tone: calm, warm, minimal
+```
 
 ### 収益化
 - アフィリエイト（ドッグフード、ペット保険、時短家電、旅行、VOD、キャンプギア、家計管理サービス）
@@ -173,11 +200,10 @@ dekataro/
 4. デカ太郎が選択＋回答（1往復で完結）
 
 ### Phase 2: 執筆＋レビュー＋監修（✅承認②）
-5. 既存記事1本を読んでトーン確認
-6. 内部リンクのスラッグを事前確認
-7. 執筆（Markdown形式）
-8. 並列実行: editorial-check + Geminiレビュー + アイキャッチプロンプト生成
-9. デカ太郎に監修依頼（体験の嘘チェック・面白いか）
+5. 執筆（Markdown形式）。トーンはCLAUDE.mdの定義に従う（既存記事の読み込み不要）
+   - 内部リンク候補は Phase 1 で読んだネタ帳.mdの公開済み一覧から選ぶ（追加コスト0）
+6. 並列実行: editorial-check + アイキャッチプロンプト生成
+7. デカ太郎に監修依頼（体験の嘘チェック・面白いか）
 
 ### Phase 3: アイキャッチ画像（✅承認③）
 10. プロンプトファイルパスを伝える
@@ -192,7 +218,7 @@ dekataro/
     ```
     - `--auto`: YAMLフロントマターからtitle・slug・meta_descriptionを自動読み込み（必須）
     - `--media`: アイキャッチのmedia ID（`--eyecatch-id`は存在しない）
-15. 公開後にtitle・slug・linkをAPIで確認。スラッグが`{id}-2`等になっていたら即修正
+15. wp-post.pyの出力でslug・title・linkを確認。スラッグが`{id}-2`等の場合のみAPIで修正
 16. `01_編集部/ネタ帳.md` を更新（アイデア欄から削除→公開済み欄に追記）
 17. git commit + push
 
@@ -204,9 +230,9 @@ dekataro/
 
 ## 品質チェック
 
-### 二重チェック体制
-- **editorial-check**: 構成・SEO・論理整合・AI特有エラー・医療情報混入チェック
-- **Geminiレビュー**: 不快チェック・論理矛盾・読みやすさ・拡散チェック
+### チェック体制
+- **editorial-check**: 構成・SEO・論理整合・AI特有エラー・医療情報混入チェック（必須）
+- **Geminiレビュー**: 任意。デカ太郎が「Geminiにも見せて」と指示した場合のみ実行
 
 ### 文章品質ルール
 - 一文60文字以内
