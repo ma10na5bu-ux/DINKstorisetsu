@@ -27,6 +27,10 @@
 - GitHub: https://github.com/ma10na5bu-ux/DINKstorisetsu（※リポ名変更予定）
 - Slack: #dinksトリセツ（Shibamediaワークスペース）
 
+### Notion IDキャッシュ（毎回検索不要）
+- ネタ帳（統合）DB: `e306a6929d16453e9477d6ed86b56a6e`
+- ネタ帳 collection: `collection://142792f5-a9ba-461d-8b52-5d5cc2dd5470`
+
 ### Gemini MCP連携
 - テキスト系（レビュー・校正）: Gemini MCP or curl直接（gemini-2.5-flash）
 - 画像生成: Geminiチャット画面（手動）
@@ -163,8 +167,10 @@ dekataro/
 ## 制作フロー
 
 ### Phase 1: ネタ選び＋ヒアリング（✅承認①）
-1. プリフライトチェック（WP認証・公開記事一覧・Notion確認・`.env` の `NOTION_TOKEN` 存在確認）
-2. Notionネタ帳から候補取得
+1. プリフライトチェック（WP認証・`.env` の `NOTION_TOKEN` 存在確認）
+2. Notionネタ帳から候補取得（collection IDはCLAUDE.mdのIDキャッシュを使う。検索不要）
+   - notion-search で `data_source_url=collection://142792f5...` + クエリ「ブログ」を指定
+   - 返ってきた全ページIDを**1バッチで並列フェッチ**してステータスを確認
 3. 候補＋ヒアリングテンプレートをセットで提示
 4. デカ太郎が選択＋回答（1往復で完結）
 
