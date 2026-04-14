@@ -25,7 +25,7 @@ category: shiba
 
 「あまり振らない」のは、ハチの性格だと思っていた。
 
-でも実は、<mark style="background-color:#fef08a"><strong>形の問題もある。</strong></mark>
+でも実は、<span class="swl-marker mark_yellow"><strong>形の問題もある。</strong></span>
 
 柴犬のしっぽは「巻き尾」が特徴で、くるんと丸まった形をしている。
 
@@ -58,7 +58,7 @@ category: shiba
 
 犬のしっぽには「右に振る」「左に振る」で意味が変わるという研究がある。
 
-イタリアの研究チームが発表したもので（Current Biology掲載）、<mark style="background-color:#fef08a"><strong>右にしっぽを振るときはポジティブな感情、左に振るときはネガティブな感情</strong></mark>を表しているというものだ。
+イタリアの研究チームが発表したもので（Current Biology掲載）、<span class="swl-marker mark_yellow"><strong>右にしっぽを振るときはポジティブな感情、左に振るときはネガティブな感情</strong></span>を表しているというものだ。
 
 理由は脳の構造にある。
 
@@ -97,7 +97,7 @@ category: shiba
 
 くるんと巻いていたしっぽが、ピンと下を向いた。怖がっているんだとすぐにわかった。
 
-<mark style="background-color:#fef08a"><strong>しっぽの「位置と動き」は感情のバロメーターになっている。</strong></mark>
+<span class="swl-marker mark_yellow"><strong>しっぽの「位置と動き」は感情のバロメーターになっている。</strong></span>
 
 | しっぽの状態 | 感情の目安 |
 |---|---|
@@ -122,7 +122,7 @@ category: shiba
 ## まとめ：柴犬のしっぽ、観察するのが楽しくなった
 
 - 柴犬のしっぽは「巻き尾」で小さく見えにくい——振っていないわけではない
-- <mark style="background-color:#fef08a"><strong>右に振る→ポジティブ、左に振る→ネガティブ</strong></mark>（イタリア研究・Current Biology掲載）
+- <span class="swl-marker mark_yellow"><strong>右に振る→ポジティブ、左に振る→ネガティブ</strong></span>（イタリア研究・Current Biology掲載）
 - しっぽが下がる・足の間に挟む→恐怖・強いストレスのサイン
 - 「右か左か」を意識するだけで、感情が読めるようになる
 
