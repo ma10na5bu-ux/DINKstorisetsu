@@ -135,14 +135,27 @@ dekataro/
 <!-- /wp:loos/balloon -->
 ```
 
-### 黄色ハイライト記法
-原稿Markdownでは `<mark>` タグを使う。wp-post.py が自動的にSWELLネイティブマーカーに変換する。
+### テキスト強調ルール（太字・ハイライト）
 
+3種類の記法を使い分ける。md-to-wp-blocks.py が自動変換する。
+
+| 記法 | WordPress出力 | 使用場面 | 頻度上限 |
+|---|---|---|---|
+| `**太字**` | `<strong>太字</strong>` | 商品名・サービス名・重要な固有名詞 | 段落内1〜2か所 |
+| `<mark>テキスト</mark>` | SWELLマーカー（黄） | 各H2の要点・読者に一番伝えたい1文 | 1H2につき1か所 |
+| `<mark>**テキスト**</mark>` | SWELLマーカー（黄）＋太字 | 記事全体の最重要ポイント | 記事全体で2〜3か所まで |
+
+**変換後のHTML：**
 ```
-<mark>ここに強調したいテキスト</mark>
+**太字**                   → <strong>太字</strong>
+<mark>テキスト</mark>       → <span class="swl-marker mark_yellow">テキスト</span>
+<mark>**テキスト**</mark>   → <span class="swl-marker mark_yellow"><strong>テキスト</strong></span>
 ```
 
-→ WordPressには `<span class="swl-marker mark_yellow">テキスト</span>` として投稿される。
+**禁止パターン：**
+- `**`と`<mark>`を同じ箇所に乱用しない
+- まとめ箇条書き全行をハイライトしない（1〜2行まで）
+- H3見出しテキストに太字・ハイライトを使わない
 
 ### タイトル
 - **40文字以内**

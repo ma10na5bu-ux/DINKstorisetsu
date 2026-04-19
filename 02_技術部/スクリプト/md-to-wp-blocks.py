@@ -19,17 +19,35 @@ import re
 
 
 def convert_inline(text):
-    """インラインMarkdown（リンク・太字）をHTMLに変換"""
+    """インラインMarkdown（リンク・太字・ハイライト）をHTMLに変換
+
+    記法ルール:
+      **text**                → 太字のみ <strong>
+      <mark>text</mark>       → 黄色ハイライトのみ（SWELLマーカー）
+      <mark>**text**</mark>   → 太字＋黄色ハイライト（組み合わせ。必ず先に処理）
+    """
     # Markdownリンク [text](url) → <a href="url">text</a>
     text = re.sub(
         r'\[([^\]]+)\]\(([^)]+)\)',
         r'<a href="\2">\1</a>',
         text
     )
-    # 太字 **text** → SWELL黄色マーカー＋太字
+    # 太字＋黄色ハイライト: <mark>**text**</mark>（組み合わせは必ず先に処理）
+    text = re.sub(
+        r'<mark[^>]*>\*\*([^*]+)\*\*</mark>',
+        r'<span class="swl-marker mark_yellow"><strong>\1</strong></span>',
+        text
+    )
+    # 黄色ハイライトのみ: <mark>text</mark> → SWELLネイティブマーカー
+    text = re.sub(
+        r'<mark[^>]*>(.*?)</mark>',
+        r'<span class="swl-marker mark_yellow">\1</span>',
+        text
+    )
+    # 太字のみ: **text** → <strong>
     text = re.sub(
         r'\*\*([^*]+)\*\*',
-        r'<span class="swl-marker mark_yellow"><strong>\1</strong></span>',
+        r'<strong>\1</strong>',
         text
     )
     return text
@@ -166,6 +184,17 @@ def convert_md_to_wp_blocks(md_text):
                     break
                 i += 1
             blocks.append('\n'.join(block_lines))
+            continue
+
+        # H3見出し（H2より先に判定すること）
+        if stripped.startswith('### '):
+            heading_text = convert_inline(stripped[4:])
+            blocks.append(
+                f'<!-- wp:heading {{"level":3}} -->\n'
+                f'<h3>{heading_text}</h3>\n'
+                f'<!-- /wp:heading -->'
+            )
+            i += 1
             continue
 
         # H2見出し
