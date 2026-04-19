@@ -146,7 +146,9 @@ dekataro/
 - 画像alt属性は必ず設定
 
 ### アイキャッチ画像
-- トリミング: trim-eyecatch.py（右200px・下140pxクロップ → 1200×630）
+- 生成: generate-eyecatch.py（gemini-3-pro-image-preview → 1200×630 JPEG を自動出力）
+- trim-eyecatch.py は不要（ウォーターマークなし・リサイズはスクリプト内で完結）
+- 出力ファイル: `01_編集部/画像/{slug}_eyecatch.jpg`
 - プロンプトファイルは `01_編集部/画像/{slug}_eyecatch_prompt.md` に保存
 - `アイキャッチ画像プロンプト集.md` は読み込み不要。以下のテンプレートを使う:
 
@@ -210,10 +212,12 @@ Draw a wide illustration (16:9 aspect ratio, 1200×630px).
 9. 並列実行: editorial-check + fact-check + アイキャッチプロンプト生成
 10. デカ太郎に監修依頼（体験の嘘チェック・面白いか・fact-checkの🔍人間確認項目）
 
-### Phase 4: アイキャッチ画像（✅承認④）
-11. プロンプトファイルパスを伝える
-12. デカ太郎がGeminiで画像生成
-13. trim-eyecatch.py でトリミング（自動）
+### Phase 4: アイキャッチ画像（全自動）
+11. generate-eyecatch.py でアイキャッチ生成・リサイズ（自動）
+    ```
+    python3 02_技術部/スクリプト/generate-eyecatch.py {slug}
+    ```
+    → `01_編集部/画像/{slug}_eyecatch.jpg` が出力される
 
 ### Phase 5: 公開（全自動）
 14. 画像アップロード（curl -F multipart形式。--data-binaryはWAF 403）

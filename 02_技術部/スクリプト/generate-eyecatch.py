@@ -2,21 +2,23 @@
 """
 アイキャッチ画像生成スクリプト
 
-Gemini Imagen 3 API を使ってアイキャッチ画像を生成する。
+Gemini 3 Pro Image API を使ってアイキャッチ画像を生成し、1200×630にリサイズする。
 
 使い方:
   python3 generate-eyecatch.py <slug>
 
 出力:
-  01_編集部/画像/{slug}_eyecatch_raw.png を保存し、ファイルパスを stdout に出力する
+  01_編集部/画像/{slug}_eyecatch.jpg (1200×630) を保存し、ファイルパスを stdout に出力する
 """
 
+import io
 import os
 import sys
 from pathlib import Path
 
 from google import genai
 from google.genai import types
+from PIL import Image
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = SCRIPT_DIR.parent.parent
@@ -24,9 +26,28 @@ PROJECT_ROOT = SCRIPT_DIR.parent.parent
 PROMPT_DIR = PROJECT_ROOT / "01_編集部" / "画像"
 OUTPUT_DIR = PROJECT_ROOT / "01_編集部" / "画像"
 
-MODEL = "imagen-4.0-generate-001"
-ASPECT_RATIO = "16:9"
-NUMBER_OF_IMAGES = 1
+MODEL = "gemini-3-pro-image-preview"
+OUTPUT_WIDTH = 1200
+OUTPUT_HEIGHT = 630
+JPEG_QUALITY = 95
+
+
+def resize_to_eyecatch(img: Image.Image) -> Image.Image:
+    """センタークロップして1200×630にリサイズする"""
+    src_w, src_h = img.size
+    src_ratio = src_w / src_h
+    target_ratio = OUTPUT_WIDTH / OUTPUT_HEIGHT
+
+    if src_ratio > target_ratio:
+        new_w = int(src_h * target_ratio)
+        left = (src_w - new_w) // 2
+        img = img.crop((left, 0, left + new_w, src_h))
+    elif src_ratio < target_ratio:
+        new_h = int(src_w / target_ratio)
+        top = (src_h - new_h) // 2
+        img = img.crop((0, top, src_w, top + new_h))
+
+    return img.resize((OUTPUT_WIDTH, OUTPUT_HEIGHT), Image.LANCZOS).convert("RGB")
 
 
 def main():
@@ -50,22 +71,31 @@ def main():
 
     client = genai.Client(api_key=api_key)
 
-    response = client.models.generate_images(
+    response = client.models.generate_content(
         model=MODEL,
-        prompt=prompt_text,
-        config=types.GenerateImagesConfig(
-            number_of_images=NUMBER_OF_IMAGES,
-            aspect_ratio=ASPECT_RATIO,
+        contents=prompt_text,
+        config=types.GenerateContentConfig(
+            response_modalities=["IMAGE", "TEXT"],
         ),
     )
 
-    if not response.generated_images:
+    # レスポンスから画像データを取得
+    image_data = None
+    for part in response.candidates[0].content.parts:
+        if part.inline_data and part.inline_data.mime_type.startswith("image/"):
+            image_data = part.inline_data.data
+            break
+
+    if image_data is None:
         print("エラー: 画像が生成されませんでした", file=sys.stderr)
         sys.exit(1)
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    output_path = OUTPUT_DIR / f"{slug}_eyecatch_raw.png"
-    output_path.write_bytes(response.generated_images[0].image.image_bytes)
+
+    img = Image.open(io.BytesIO(image_data))
+    final = resize_to_eyecatch(img)
+    output_path = OUTPUT_DIR / f"{slug}_eyecatch.jpg"
+    final.save(output_path, "JPEG", quality=JPEG_QUALITY)
 
     print(str(output_path))
 
