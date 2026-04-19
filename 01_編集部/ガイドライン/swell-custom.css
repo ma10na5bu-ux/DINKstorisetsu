@@ -126,7 +126,7 @@ body {
 }
 
 .post_content h3 {
-  border-bottom: 3px solid var(--deka-accent);
+  border-bottom: 3px solid var(--deka-primary);
   padding-bottom: 0.4em;
   margin: 2em 0 1em;
   font-size: 1.2rem;
@@ -165,6 +165,20 @@ body {
 }
 
 /* ============================================
+   5b. テーブル（thead を控えめに）
+   ============================================ */
+.post_content table thead {
+  border-bottom: 2px solid var(--deka-primary) !important;
+}
+.post_content table thead th,
+.post_content table thead td {
+  background-color: var(--deka-primary-light) !important;
+  color: var(--deka-text) !important;
+  font-weight: 700 !important;
+  font-size: 0.95em;
+}
+
+/* ============================================
    6. ふきだし
    ============================================ */
 .swell-block-balloon {
@@ -172,26 +186,24 @@ body {
 }
 
 /* デカ太郎（左・グリーン） → パレットのプライマリ系 */
-.swell-block-balloon.-green .c-balloon__body {
-  background-color: var(--deka-primary-light) !important;
+[data-col="green"] .c-balloon__text {
+  background: var(--deka-primary-light) !important;
   border-color: var(--deka-primary) !important;
 }
-.swell-block-balloon.-green .c-balloon__body::before {
-  border-right-color: var(--deka-primary) !important;
-}
-.swell-block-balloon.-green .c-balloon__body::after {
+[data-col="green"] .c-balloon__before {
   border-right-color: var(--deka-primary-light) !important;
 }
 
 /* ヨメ氏（右・レッド） → パレットのアクセント系 */
-.swell-block-balloon.-red .c-balloon__body {
-  background-color: #FCEAE5 !important;
+[data-col="red"] .c-balloon__text {
+  background: #FCEAE5 !important;
   border-color: var(--deka-accent) !important;
 }
-.swell-block-balloon.-red .c-balloon__body::before {
-  border-left-color: var(--deka-accent) !important;
+[data-col="red"] .c-balloon__before {
+  border-right-color: #FCEAE5 !important;
 }
-.swell-block-balloon.-red .c-balloon__body::after {
+.-bln-right[data-col="red"] .c-balloon__before {
+  border-right-color: transparent !important;
   border-left-color: #FCEAE5 !important;
 }
 
