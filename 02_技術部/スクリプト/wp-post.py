@@ -184,6 +184,17 @@ def post_content_safe(post_id, content, env):
     return result
 
 
+def get_category_id(category_slug, wp_url, env):
+    """カテゴリslugからWP category IDを取得。見つからない場合はNone"""
+    result, status = wp_api_request(
+        f"{wp_url}/wp-json/wp/v2/categories?slug={category_slug}&per_page=1",
+        env
+    )
+    if status == 200 and result:
+        return result[0]['id']
+    return None
+
+
 def convert_md_to_wp(md_path):
     """Markdownファイルをmd-to-wp-blocks.pyで変換"""
     result = subprocess.run(
@@ -217,6 +228,8 @@ def extract_metadata(md_path):
                 meta['slug'] = val
             elif key == 'meta_description':
                 meta['excerpt'] = val
+            elif key == 'category':
+                meta['category'] = val
         return meta
 
     # フォールバック: Markdown見出し形式
@@ -284,6 +297,17 @@ def main():
                 args.excerpt = meta.get('excerpt')
             if not args.slug:
                 args.slug = meta.get('slug')
+            if not hasattr(args, 'category_id'):
+                category_slug = meta.get('category')
+                if category_slug:
+                    args.category_id = get_category_id(category_slug, wp_url, env)
+                    if args.category_id:
+                        print(f"カテゴリ: {category_slug} (id={args.category_id})", file=sys.stderr)
+                    else:
+                        print(f"警告: カテゴリ '{category_slug}' が見つかりません", file=sys.stderr)
+                        args.category_id = None
+                else:
+                    args.category_id = None
     else:
         with open(file_path, 'r', encoding='utf-8') as f:
             content = f.read()
@@ -315,6 +339,8 @@ def main():
             create_payload['excerpt'] = args.excerpt
         if args.media:
             create_payload['featured_media'] = args.media
+        if getattr(args, 'category_id', None):
+            create_payload['categories'] = [args.category_id]
 
         result, status = wp_api_request(
             f"{wp_url}/wp-json/wp/v2/posts",
@@ -333,6 +359,18 @@ def main():
 
     # コンテンツ投稿（WAF対策付き）
     result = post_content_safe(post_id, content, env)
+
+    # カテゴリ設定（--auto時にcategory_idが解決済みの場合）
+    if getattr(args, 'category_id', None):
+        cat_payload = json.dumps({'categories': [args.category_id]}).encode()
+        _, cat_status = wp_api_request(
+            f"{wp_url}/wp-json/wp/v2/posts/{post_id}",
+            env, data=cat_payload, method='POST'
+        )
+        if cat_status == 200:
+            print(f"  カテゴリ設定: 完了", file=sys.stderr)
+        else:
+            print(f"  警告: カテゴリ設定失敗 HTTP {cat_status}", file=sys.stderr)
 
     # 公開
     if args.publish:
