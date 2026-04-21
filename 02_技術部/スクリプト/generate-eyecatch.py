@@ -2,7 +2,7 @@
 """
 アイキャッチ画像生成スクリプト
 
-Gemini 3 Pro Image API を使ってアイキャッチ画像を生成し、1200×630にリサイズする。
+Gemini 3.1 Flash Image API を使ってアイキャッチ画像を生成し、1200×630にリサイズする。
 
 使い方:
   python3 generate-eyecatch.py <slug>
@@ -26,7 +26,7 @@ PROJECT_ROOT = SCRIPT_DIR.parent.parent
 PROMPT_DIR = PROJECT_ROOT / "01_編集部" / "画像"
 OUTPUT_DIR = PROJECT_ROOT / "01_編集部" / "画像"
 
-MODEL = "gemini-3-pro-image-preview"
+MODEL = "gemini-3.1-flash-image-preview"
 OUTPUT_WIDTH = 1200
 OUTPUT_HEIGHT = 630
 JPEG_QUALITY = 95
