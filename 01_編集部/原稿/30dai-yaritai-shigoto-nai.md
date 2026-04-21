@@ -17,8 +17,8 @@ category: "work"
 
 ## お金のためだけに働いた10年間
 
-<!-- wp:image {"id":850,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://dekataro.com/wp-content/uploads/2026/04/30dai-yaritai-shigoto-nai_h2_1.jpg" alt="通勤する30代男性の後ろ姿" class="wp-image-850"/></figure>
+<!-- wp:image {"id":861,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://dekataro.com/wp-content/uploads/2026/04/30dai-yaritai-shigoto-nai_h2_1-1.jpg" alt="通勤する30代男性の後ろ姿" class="wp-image-861"/></figure>
 <!-- /wp:image -->
 
 就職も転職も、判断基準はずっと「給料」だった。
@@ -41,8 +41,8 @@ category: "work"
 
 ## 「やりたい仕事」を探すほどドツボにハマる
 
-<!-- wp:image {"id":851,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://dekataro.com/wp-content/uploads/2026/04/30dai-yaritai-shigoto-nai_h2_2.jpg" alt="自己分析に悩む30代男性と柴犬" class="wp-image-851"/></figure>
+<!-- wp:image {"id":862,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://dekataro.com/wp-content/uploads/2026/04/30dai-yaritai-shigoto-nai_h2_2-1.jpg" alt="自己分析に悩む30代男性と柴犬" class="wp-image-862"/></figure>
 <!-- /wp:image -->
 
 危機感を覚えて、行動してみたことはある。
@@ -67,8 +67,8 @@ category: "work"
 
 ## 隣で変わっていくヨメ氏を見て気づいたこと
 
-<!-- wp:image {"id":852,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://dekataro.com/wp-content/uploads/2026/04/30dai-yaritai-shigoto-nai_h2_3.jpg" alt="楽しそうに働くヨメ氏と見守るデカ太郎と柴犬" class="wp-image-852"/></figure>
+<!-- wp:image {"id":863,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://dekataro.com/wp-content/uploads/2026/04/30dai-yaritai-shigoto-nai_h2_3-1.jpg" alt="楽しそうに働くヨメ氏と見守るデカ太郎と柴犬" class="wp-image-863"/></figure>
 <!-- /wp:image -->
 
 転機は、意外なところにあった。
@@ -99,8 +99,8 @@ category: "work"
 
 ## 「何をやるか」より「何のためにやるか」だった
 
-<!-- wp:image {"id":853,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://dekataro.com/wp-content/uploads/2026/04/30dai-yaritai-shigoto-nai_h2_4.jpg" alt="分岐路で新しい道を選ぶ男性と柴犬" class="wp-image-853"/></figure>
+<!-- wp:image {"id":864,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://dekataro.com/wp-content/uploads/2026/04/30dai-yaritai-shigoto-nai_h2_4-1.jpg" alt="分岐路で新しい道を選ぶ男性と柴犬" class="wp-image-864"/></figure>
 <!-- /wp:image -->
 
 ヨメ氏の姿を見て、自分も動こうと決めた。
@@ -125,8 +125,8 @@ category: "work"
 
 ## 30代、焦らなくていい。でも動くなら今だと思う
 
-<!-- wp:image {"id":854,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://dekataro.com/wp-content/uploads/2026/04/30dai-yaritai-shigoto-nai_h2_5.jpg" alt="ポーチでコーヒーを飲む夫婦と柴犬" class="wp-image-854"/></figure>
+<!-- wp:image {"id":865,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://dekataro.com/wp-content/uploads/2026/04/30dai-yaritai-shigoto-nai_h2_5-1.jpg" alt="ポーチでコーヒーを飲む夫婦と柴犬" class="wp-image-865"/></figure>
 <!-- /wp:image -->
 
 「やりたい仕事がない」と悩んでいる30代に、偉そうなことは言えない。僕自身、まだ途中だから。
