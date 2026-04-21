@@ -1,14 +1,18 @@
 #!/usr/bin/env python3
 """
-アイキャッチ画像生成スクリプト
+画像生成スクリプト
 
-Gemini 3.1 Flash Image API を使ってアイキャッチ画像を生成し、1200×630にリサイズする。
+Imagen 4 Ultra API を使って画像を生成し、1200×630にリサイズする。
 
 使い方:
-  python3 generate-eyecatch.py <slug>
+  python3 generate-eyecatch.py <slug>                    # アイキャッチのみ
+  python3 generate-eyecatch.py <slug> --h2               # アイキャッチ＋H2画像すべて
+  python3 generate-eyecatch.py <slug> --h2-only           # H2画像のみ
+  python3 generate-eyecatch.py <slug> --h2-only 2 4       # H2の2番と4番のみ
 
 出力:
-  01_編集部/画像/{slug}_eyecatch.jpg (1200×630) を保存し、ファイルパスを stdout に出力する
+  01_編集部/画像/{slug}_eyecatch.jpg (1200×630)
+  01_編集部/画像/{slug}_h2_{n}.jpg   (1200×630)
 """
 
 import io
@@ -26,14 +30,15 @@ PROJECT_ROOT = SCRIPT_DIR.parent.parent
 PROMPT_DIR = PROJECT_ROOT / "01_編集部" / "画像"
 OUTPUT_DIR = PROJECT_ROOT / "01_編集部" / "画像"
 
-MODEL = "gemini-3.1-flash-image-preview"
+MODEL = "imagen-4.0-ultra-generate-001"
+ASPECT_RATIO = "16:9"
 OUTPUT_WIDTH = 1200
 OUTPUT_HEIGHT = 630
 JPEG_QUALITY = 95
 
 
 def resize_to_eyecatch(img: Image.Image) -> Image.Image:
-    """センタークロップして1200×630にリサイズする"""
+    """1200×630にリサイズする（16:9ネイティブ生成なのでクロップは最小限）"""
     src_w, src_h = img.size
     src_ratio = src_w / src_h
     target_ratio = OUTPUT_WIDTH / OUTPUT_HEIGHT
@@ -50,54 +55,82 @@ def resize_to_eyecatch(img: Image.Image) -> Image.Image:
     return img.resize((OUTPUT_WIDTH, OUTPUT_HEIGHT), Image.LANCZOS).convert("RGB")
 
 
+def generate_image(client, prompt_text: str, output_path: Path):
+    """Imagen 4 Ultra で画像を1枚生成して保存する"""
+    response = client.models.generate_images(
+        model=MODEL,
+        prompt=prompt_text,
+        config=types.GenerateImagesConfig(
+            number_of_images=1,
+            aspect_ratio=ASPECT_RATIO,
+        ),
+    )
+
+    img_bytes = response.generated_images[0].image.image_bytes
+    img = Image.open(io.BytesIO(img_bytes))
+    final = resize_to_eyecatch(img)
+
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    final.save(output_path, "JPEG", quality=JPEG_QUALITY)
+    print(str(output_path))
+
+
 def main():
-    if len(sys.argv) != 2:
-        print("使い方: python3 generate-eyecatch.py <slug>", file=sys.stderr)
+    if len(sys.argv) < 2:
+        print("使い方: python3 generate-eyecatch.py <slug> [--h2 | --h2-only [番号...]]", file=sys.stderr)
         sys.exit(1)
 
     slug = sys.argv[1]
+    args = sys.argv[2:]
+
+    h2_mode = False
+    h2_only_mode = False
+    h2_numbers = []
+
+    if "--h2" in args:
+        h2_mode = True
+    elif "--h2-only" in args:
+        h2_only_mode = True
+        idx = args.index("--h2-only")
+        h2_numbers = [int(n) for n in args[idx + 1:]]
 
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
         print("エラー: 環境変数 GEMINI_API_KEY が設定されていません", file=sys.stderr)
         sys.exit(1)
 
-    prompt_path = PROMPT_DIR / f"{slug}_eyecatch_prompt.md"
-    if not prompt_path.exists():
-        print(f"エラー: プロンプトファイルが見つかりません: {prompt_path}", file=sys.stderr)
-        sys.exit(1)
-
-    prompt_text = prompt_path.read_text(encoding="utf-8").strip()
-
     client = genai.Client(api_key=api_key)
 
-    response = client.models.generate_content(
-        model=MODEL,
-        contents=prompt_text,
-        config=types.GenerateContentConfig(
-            response_modalities=["IMAGE", "TEXT"],
-        ),
-    )
+    # アイキャッチ生成
+    if not h2_only_mode:
+        eyecatch_prompt_path = PROMPT_DIR / f"{slug}_eyecatch_prompt.md"
+        if not eyecatch_prompt_path.exists():
+            print(f"エラー: プロンプトファイルが見つかりません: {eyecatch_prompt_path}", file=sys.stderr)
+            sys.exit(1)
 
-    # レスポンスから画像データを取得
-    image_data = None
-    for part in response.candidates[0].content.parts:
-        if part.inline_data and part.inline_data.mime_type.startswith("image/"):
-            image_data = part.inline_data.data
-            break
+        prompt_text = eyecatch_prompt_path.read_text(encoding="utf-8").strip()
+        output_path = OUTPUT_DIR / f"{slug}_eyecatch.jpg"
+        generate_image(client, prompt_text, output_path)
 
-    if image_data is None:
-        print("エラー: 画像が生成されませんでした", file=sys.stderr)
-        sys.exit(1)
+    # H2画像生成
+    if h2_mode or h2_only_mode:
+        # H2プロンプトファイルを検索
+        if h2_numbers:
+            h2_prompts = [(n, PROMPT_DIR / f"{slug}_h2_{n}_prompt.md") for n in h2_numbers]
+        else:
+            h2_prompts = []
+            for n in range(1, 20):
+                p = PROMPT_DIR / f"{slug}_h2_{n}_prompt.md"
+                if p.exists():
+                    h2_prompts.append((n, p))
 
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-
-    img = Image.open(io.BytesIO(image_data))
-    final = resize_to_eyecatch(img)
-    output_path = OUTPUT_DIR / f"{slug}_eyecatch.jpg"
-    final.save(output_path, "JPEG", quality=JPEG_QUALITY)
-
-    print(str(output_path))
+        for n, prompt_path in h2_prompts:
+            if not prompt_path.exists():
+                print(f"警告: H2_{n} プロンプトが見つかりません: {prompt_path}", file=sys.stderr)
+                continue
+            prompt_text = prompt_path.read_text(encoding="utf-8").strip()
+            output_path = OUTPUT_DIR / f"{slug}_h2_{n}.jpg"
+            generate_image(client, prompt_text, output_path)
 
 
 if __name__ == "__main__":
