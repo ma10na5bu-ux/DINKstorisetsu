@@ -1,7 +1,7 @@
 Draw a wide illustration (16:9 aspect ratio, 1200×630px).
 
 【Scene】
-A timeline or progression showing three failed attempts at working out. Left: a man overwhelmed by too many dumbbells and equipment. Center: a man looking confused at a complex workout chart. Right: a man sitting on a bench looking at his phone, skipping his workout. Each scene shows subtle defeat. A small Shiba Inu watches from the side.
+A Japanese couple in their 30s having a calm conversation at a dining table in their home. A notebook and a cup of tea are on the table, suggesting they are discussing future life plans with warmth and trust. Their small Shiba Inu sits nearby and looks relaxed. The mood should feel hopeful, stable, and gentle. Keep the bottom-right 15% free from important elements.
 
 【Art Style】
 - Flat vector illustration style, NOT anime
@@ -18,7 +18,7 @@ A timeline or progression showing three failed attempts at working out. Left: a 
 
 【Composition】
 - Clean and simple, lots of white space / Key elements centered
-- IMPORTANT: Do NOT place any important elements in the bottom-right 15% of the image. Fill the entire canvas with the background color — no blank or white patches anywhere.
+- IMPORTANT: Do NOT place any important elements in the bottom-right corner (the bottom-right 15% of the image will be cropped)
 - Magazine editorial feel, calm and sophisticated
 
 【Rules】

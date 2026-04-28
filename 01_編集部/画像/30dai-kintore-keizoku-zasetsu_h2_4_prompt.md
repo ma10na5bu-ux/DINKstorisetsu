@@ -18,7 +18,7 @@ A 30-something man walking his small Shiba Inu dog on a morning walk, looking en
 
 【Composition】
 - Clean and simple, lots of white space / Key elements centered
-- IMPORTANT: Do NOT place any important elements in the bottom-right corner (the bottom-right 15% of the image will be cropped)
+- IMPORTANT: Do NOT place any important elements in the bottom-right 15% of the image. Fill the entire canvas with the background color — no blank or white patches anywhere.
 - Magazine editorial feel, calm and sophisticated
 
 【Rules】

@@ -1,7 +1,7 @@
 Draw a wide illustration (16:9 aspect ratio, 1200×630px).
 
 【Scene】
-A timeline or progression showing three failed attempts at working out. Left: a man overwhelmed by too many dumbbells and equipment. Center: a man looking confused at a complex workout chart. Right: a man sitting on a bench looking at his phone, skipping his workout. Each scene shows subtle defeat. A small Shiba Inu watches from the side.
+A Japanese man in his 30s stands in front of two simple signposts representing different career options. He looks hesitant but is taking one step forward. Behind him, subtle icons of resume, interview, and company building suggest the job change process. A small Shiba Inu walks confidently ahead, symbolizing momentum. Keep all important visual elements centered and away from the bottom-right 15%.
 
 【Art Style】
 - Flat vector illustration style, NOT anime
@@ -18,7 +18,7 @@ A timeline or progression showing three failed attempts at working out. Left: a 
 
 【Composition】
 - Clean and simple, lots of white space / Key elements centered
-- IMPORTANT: Do NOT place any important elements in the bottom-right 15% of the image. Fill the entire canvas with the background color — no blank or white patches anywhere.
+- IMPORTANT: Do NOT place any important elements in the bottom-right corner (the bottom-right 15% of the image will be cropped)
 - Magazine editorial feel, calm and sophisticated
 
 【Rules】

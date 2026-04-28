@@ -1,7 +1,7 @@
 Draw a wide illustration (16:9 aspect ratio, 1200×630px).
 
 【Scene】
-A timeline or progression showing three failed attempts at working out. Left: a man overwhelmed by too many dumbbells and equipment. Center: a man looking confused at a complex workout chart. Right: a man sitting on a bench looking at his phone, skipping his workout. Each scene shows subtle defeat. A small Shiba Inu watches from the side.
+A happy couple in their 30s sitting together on a comfortable sofa in a modern living room, with a small Shiba Inu (mame-shiba) curled up between them. They are relaxed, perhaps holding coffee cups, looking at each other with warm smiles. The room has minimal furniture — a small plant, a bookshelf, warm lighting. The scene conveys a peaceful, intentional two-person lifestyle.
 
 【Art Style】
 - Flat vector illustration style, NOT anime

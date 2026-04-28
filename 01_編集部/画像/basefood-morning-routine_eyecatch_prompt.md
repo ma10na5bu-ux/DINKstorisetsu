@@ -1,7 +1,7 @@
 Draw a wide illustration (16:9 aspect ratio, 1200×630px).
 
 【Scene】
-A cozy home interior scene. A husband and wife in their 30s are both doing housework together naturally — one is washing dishes at the kitchen sink while the other is folding laundry on the sofa. A small Shiba Inu (豆柴) sits nearby watching them. The atmosphere is calm and harmonious, not staged. It feels like an ordinary weekday evening at home.
+A relaxed morning kitchen scene. A couple in their 30s sits at a small dining table, both dressed for work. Each has an open BASE FOOD bread package (a modern nutrition-complete bread product) on the table in front of them. The husband (left) is lightly stretching or checking his phone, the wife (right) is eating calmly. A small Shiba Inu dog sits on the floor nearby, looking up at them. The kitchen behind them is tidy and minimal. Morning light comes in from a window. The atmosphere is calm, effortless, and time-rich — no cooking, no stress.
 
 【Art Style】
 - Flat vector illustration style, NOT anime

@@ -1,7 +1,7 @@
 Draw a wide illustration (16:9 aspect ratio, 1200×630px).
 
 【Scene】
-A timeline or progression showing three failed attempts at working out. Left: a man overwhelmed by too many dumbbells and equipment. Center: a man looking confused at a complex workout chart. Right: a man sitting on a bench looking at his phone, skipping his workout. Each scene shows subtle defeat. A small Shiba Inu watches from the side.
+A couple in their 30s sitting at a table with a notebook and laptop open, planning together. Around them are floating soft icons representing 5 life areas: a piggy bank (money), two interlinked hearts (relationship), a house (housing), a document with a seal (legal), and people gathering (community). A small Shiba Inu sits beside them, looking up. The mood is proactive and hopeful — they are preparing for the future together.
 
 【Art Style】
 - Flat vector illustration style, NOT anime
