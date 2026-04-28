@@ -9,7 +9,7 @@ category: "training"
 
 ゴルフのラウンドで18ホール歩いただけで、帰りの運転中に眠気が襲ってくる。
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/yomeshi-icon.png","balloonName":"ヨメ氏","balloonCol":"red","balloonAlign":"right"} -->
+<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/yomeshi-icon.png","balloonName":"はるさん","balloonCol":"red","balloonAlign":"right"} -->
 <p>「最近キャンプの翌日ずっと寝てるよね」</p>
 <!-- /wp:loos/balloon -->
 
@@ -27,7 +27,7 @@ category: "training"
 
 30代に入ってから、明らかに回復が遅い。
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/dekataro-icon.png","balloonName":"デカ太郎","balloonCol":"green"} -->
+<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/dekataro-icon.png","balloonName":"がく","balloonCol":"green"} -->
 <p>「いや、昨日ちょっと動いただけなんだけど……」</p>
 <!-- /wp:loos/balloon -->
 
@@ -49,7 +49,7 @@ category: "training"
 - 2回目: 分割法（部位ごとに日を分けるやり方）を導入。難しいメニューに挑戦したものの、モチベーションが上がらず自然消滅
 - 3回目: 週2回でメニューを組んだ。間が空きすぎて「今日やらなくてもいいか」が増え、そのままフェードアウト
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/yomeshi-icon.png","balloonName":"ヨメ氏","balloonCol":"red","balloonAlign":"right"} -->
+<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/yomeshi-icon.png","balloonName":"はるさん","balloonCol":"red","balloonAlign":"right"} -->
 <p>「また始めたの？って、もう聞き飽きたけど」</p>
 <!-- /wp:loos/balloon -->
 
@@ -80,11 +80,11 @@ category: "training"
 
 その代わり、<mark>**ハードルの調整はメニューを組む段階で済ませておく**</mark>。「今日はやる気ないからこれだけ」をやり始めると、どんどん崩れる。最初から「これならこなせる」という量に設定しておけば、あとは淡々とやるだけだ。
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/dekataro-icon.png","balloonName":"デカ太郎","balloonCol":"green"} -->
+<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/dekataro-icon.png","balloonName":"がく","balloonCol":"green"} -->
 <p>「メニュー決まってるから、考えなくていいのがラク」</p>
 <!-- /wp:loos/balloon -->
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/yomeshi-icon.png","balloonName":"ヨメ氏","balloonCol":"red","balloonAlign":"right"} -->
+<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/yomeshi-icon.png","balloonName":"はるさん","balloonCol":"red","balloonAlign":"right"} -->
 <p>「考えるの苦手だもんね」</p>
 <!-- /wp:loos/balloon -->
 
@@ -102,7 +102,7 @@ category: "training"
 
 - 朝の気分がいい。なんとなくポジティブになった
 - 仕事の集中力が上がった気がする
-- ハチ（うちの豆柴）の散歩が「有酸素運動」として意味を持ち始めた
+- えいちゃん（うちの豆柴）の散歩が「有酸素運動」として意味を持ち始めた
 
 <mark>筋トレの最初の効果は、体型じゃなくてメンタルに出る</mark>。これは始めてみないとわからなかった。
 

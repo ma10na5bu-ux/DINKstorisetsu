@@ -29,7 +29,7 @@ category: "work"
 
 日曜の夜になると、なんとなく気が重くなる。月曜の朝、目覚ましが鳴るたびに「あと5分」を3回繰り返す。
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/yomeshi-icon.png","balloonName":"ヨメ氏","balloonCol":"red","balloonAlign":"right"} -->
+<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/yomeshi-icon.png","balloonName":"はるさん","balloonCol":"red","balloonAlign":"right"} -->
 <p>「日曜の夜、毎週ため息ついてるよね」</p>
 <!-- /wp:loos/balloon -->
 
@@ -51,7 +51,7 @@ category: "work"
 
 結果はどれも「なるほど」とは思う。でも「これだ！」にはならない。
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/dekataro-icon.png","balloonName":"デカ太郎","balloonCol":"green"} -->
+<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/dekataro-icon.png","balloonName":"がく","balloonCol":"green"} -->
 <p>「診断結果は"クリエイティブ系"って出たけど、具体的に何すればいいの？」</p>
 <!-- /wp:loos/balloon -->
 
@@ -65,31 +65,31 @@ category: "work"
 
 ---
 
-## 隣で変わっていくヨメ氏を見て気づいたこと
+## 隣で変わっていくはるさんを見て気づいたこと
 
 <!-- wp:image {"id":863,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://dekataro.com/wp-content/uploads/2026/04/30dai-yaritai-shigoto-nai_h2_3-1.jpg" alt="楽しそうに働くヨメ氏と見守るデカ太郎と柴犬" class="wp-image-863"/></figure>
+<figure class="wp-block-image size-large"><img src="https://dekataro.com/wp-content/uploads/2026/04/30dai-yaritai-shigoto-nai_h2_3-1.jpg" alt="楽しそうに働くはるさんと見守るがくと柴犬" class="wp-image-863"/></figure>
 <!-- /wp:image -->
 
 転機は、意外なところにあった。
 
-去年、ヨメ氏がやりたい仕事を見つけた。転職して、新しい職場で働き始めた。
+去年、はるさんがやりたい仕事を見つけた。転職して、新しい職場で働き始めた。
 
 最初は「よかったね」くらいに思っていた。でも、日が経つにつれて変化がはっきり見えてきた。
 
 朝の表情が違う。仕事の話をするときの声のトーンが違う。帰ってきて「今日こんなことがあってさ」と楽しそうに話す。
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/yomeshi-icon.png","balloonName":"ヨメ氏","balloonCol":"red","balloonAlign":"right"} -->
+<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/yomeshi-icon.png","balloonName":"はるさん","balloonCol":"red","balloonAlign":"right"} -->
 <p>「今の仕事、大変だけど楽しいんだよね」</p>
 <!-- /wp:loos/balloon -->
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/dekataro-icon.png","balloonName":"デカ太郎","balloonCol":"green"} -->
+<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/dekataro-icon.png","balloonName":"がく","balloonCol":"green"} -->
 <p>「……うん、わかる。見ててわかる」</p>
 <!-- /wp:loos/balloon -->
 
 正直、眩しかった。羨ましかった。
 
-でも同時に、気づいたこともある。ヨメ氏は「やりたい仕事」を最初から知っていたわけじゃない。いろんな経験を経て、たどり着いていた。
+でも同時に、気づいたこともある。はるさんは「やりたい仕事」を最初から知っていたわけじゃない。いろんな経験を経て、たどり着いていた。
 
 <mark>「やりたい仕事」は頭で考えて見つけるものじゃない。動いた先で出会うものなんだ</mark>。
 
@@ -103,7 +103,7 @@ category: "work"
 <figure class="wp-block-image size-large"><img src="https://dekataro.com/wp-content/uploads/2026/04/30dai-yaritai-shigoto-nai_h2_4-1.jpg" alt="分岐路で新しい道を選ぶ男性と柴犬" class="wp-image-864"/></figure>
 <!-- /wp:image -->
 
-ヨメ氏の姿を見て、自分も動こうと決めた。
+はるさんの姿を見て、自分も動こうと決めた。
 
 ただ、やり方は変えた。「何の仕事がしたいか」を考えるのをやめた。代わりに「何のために働きたいか」を考えた。
 
@@ -152,11 +152,11 @@ category: "work"
 
 仕事探しも同じだと思う。
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/dekataro-icon.png","balloonName":"デカ太郎","balloonCol":"green"} -->
+<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/dekataro-icon.png","balloonName":"がく","balloonCol":"green"} -->
 <p>「やりたい仕事、まだ見つかってないけどさ」</p>
 <!-- /wp:loos/balloon -->
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/yomeshi-icon.png","balloonName":"ヨメ氏","balloonCol":"red","balloonAlign":"right"} -->
+<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/yomeshi-icon.png","balloonName":"はるさん","balloonCol":"red","balloonAlign":"right"} -->
 <p>「探してるんでしょ？　それでいいんじゃない」</p>
 <!-- /wp:loos/balloon -->
 

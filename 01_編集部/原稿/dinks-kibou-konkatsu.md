@@ -6,7 +6,7 @@ tags: ["DINKs", "婚活", "子なし希望", "マッチングアプリ", "結婚
 meta_description: "DINKs希望の婚活は不利？IBJ調査データと婚活手段の比較から、子なし希望の伝え方・出会い方を30代DINKs当事者が調べてまとめました。"
 ---
 
-僕自身は婚活をしていません。ヨメ氏とは職場で出会って、結婚前に「子どもは持たない方向で」と話し合って今に至ります。
+僕自身は婚活をしていません。はるさんとは職場で出会って、結婚前に「子どもは持たない方向で」と話し合って今に至ります。
 
 ただ、DINKsとして暮らす中で「もし自分がこれから婚活するなら、どうやって同じ価値観の相手を見つけるんだろう」と気になって調べてみました。
 
@@ -50,11 +50,11 @@ DINKs希望を婚活で伝えるのは勇気がいります。「引かれたら
 
 「育てられないから」ではなく「二人で人生を深めたいから」。同じ事実でも、伝え方で相手の受け取り方はまるで変わります。
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/dekataro-icon.png","balloonName":"デカ太郎","balloonCol":"green"} -->
+<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/dekataro-icon.png","balloonName":"がく","balloonCol":"green"} -->
 <p>僕たちは結婚前に子どもの話をした。あの会話がなかったら、今のDINKs生活はなかったと思う</p>
 <!-- /wp:loos/balloon -->
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/yomeshi-icon.png","balloonName":"ヨメ氏","balloonCol":"red","balloonAlign":"right"} -->
+<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/yomeshi-icon.png","balloonName":"はるさん","balloonCol":"red","balloonAlign":"right"} -->
 <p>あれは大事だったね。お互い同じ方向を向いてるってわかって安心した</p>
 <!-- /wp:loos/balloon -->
 

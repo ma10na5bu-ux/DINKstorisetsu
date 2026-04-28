@@ -24,11 +24,11 @@ DINKsの経済的優位は、戦略的に使わないとただ消えます。収
 - 先取りで積立に回す（残りで暮らす）
 - 「年1回の贅沢枠」は別予算で確保する
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/dekataro-icon.png","balloonName":"デカ太郎","balloonCol":"green"} -->
+<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/dekataro-icon.png","balloonName":"がく","balloonCol":"green"} -->
 <p>「先に投資に回して、残りで暮らす。これだけ」</p>
 <!-- /wp:loos/balloon -->
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/yomeshi-icon.png","balloonName":"ヨメ氏","balloonCol":"red","balloonAlign":"right"} -->
+<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/yomeshi-icon.png","balloonName":"はるさん","balloonCol":"red","balloonAlign":"right"} -->
 <p>「言うのは簡単だけど、キャンプギア買いすぎてない？」</p>
 <!-- /wp:loos/balloon -->
 
@@ -45,14 +45,14 @@ DINKsの経済的優位は、戦略的に使わないとただ消えます。収
 僕たちの場合、決まった「夫婦会議」はやっていません。ただ、お金・仕事・将来のことは定期的に話すようにしています。
 
 - 共通の趣味を持つ（うちはキャンプとゴルフ）
-- 別々の趣味・時間も尊重する（僕は麻雀、ヨメ氏は読書）
+- 別々の趣味・時間も尊重する（僕は麻雀、はるさんは読書）
 - お金の話をタブーにしない
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/yomeshi-icon.png","balloonName":"ヨメ氏","balloonCol":"red","balloonAlign":"right"} -->
+<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/yomeshi-icon.png","balloonName":"はるさん","balloonCol":"red","balloonAlign":"right"} -->
 <p>「来月のカード引き落とし、見た？」</p>
 <!-- /wp:loos/balloon -->
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/dekataro-icon.png","balloonName":"デカ太郎","balloonCol":"green"} -->
+<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/dekataro-icon.png","balloonName":"がく","balloonCol":"green"} -->
 <p>「……見てない。見たくない」</p>
 <!-- /wp:loos/balloon -->
 
@@ -101,13 +101,13 @@ DINKsは子どもを通じた地域コミュニティとの接点がありませ
 - 飲み仲間（月1回の定例会）
 - ゴルフ仲間（週末ラウンド）
 - 麻雀仲間（平日夜にたまに）
-- ハチの散歩で会う犬友
+- えいちゃんの散歩で会う犬友
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/dekataro-icon.png","balloonName":"デカ太郎","balloonCol":"green"} -->
+<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/dekataro-icon.png","balloonName":"がく","balloonCol":"green"} -->
 <p>「週末なにしてた？」って聞かれて「ゴルフ→麻雀→犬の散歩」って答えたら笑われた</p>
 <!-- /wp:loos/balloon -->
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/yomeshi-icon.png","balloonName":"ヨメ氏","balloonCol":"red","balloonAlign":"right"} -->
+<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/yomeshi-icon.png","balloonName":"はるさん","balloonCol":"red","balloonAlign":"right"} -->
 <p>「おじいちゃんのスケジュールだね」</p>
 <!-- /wp:loos/balloon -->
 

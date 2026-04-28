@@ -2,7 +2,7 @@
 title: 30代から始めるおすすめの趣味14選｜男女別・ひとりで没頭できるものを厳選
 slug: 30dai-shumi-osusume-ranking
 category: hobby
-meta_description: 30代から始めるおすすめの趣味を男女別・ひとりでできるもの・夫婦向けに分けて14選紹介。シミュレーションゴルフに毎日通い詰めたデカ太郎の実体験も交えながら、続く趣味の選び方を解説します。
+meta_description: 30代から始めるおすすめの趣味を男女別・ひとりでできるもの・夫婦向けに分けて14選紹介。シミュレーションゴルフに毎日通い詰めたがくの実体験も交えながら、続く趣味の選び方を解説します。
 ---
 
 30代になると、自分の「趣味」が急に気になりだした。
@@ -11,7 +11,7 @@ meta_description: 30代から始めるおすすめの趣味を男女別・ひと
 
 僕がそうだった。
 
-ヨメ氏に「ゴルフ、行ってみる？」と軽く誘われる日まで、これといった趣味がなかった。仕事帰りに特に行くところもなく、休日もなんとなく過ごしていた。
+はるさんに「ゴルフ、行ってみる？」と軽く誘われる日まで、これといった趣味がなかった。仕事帰りに特に行くところもなく、休日もなんとなく過ごしていた。
 
 その後、シミュレーションゴルフを契約して毎日通い詰めた話は[別の記事に書いた](https://dekataro.com/fuufu-golf-kyotsu-shumi/)が、「趣味がない30代」の出発点はほとんどの人が同じだと思う。
 
@@ -139,7 +139,7 @@ meta_description: 30代から始めるおすすめの趣味を男女別・ひと
 
 「ゴルフは男性の趣味」というイメージは古い。
 
-- ヨメ氏は会社のコンペをきっかけに始めて、今も楽しんでいる
+- はるさんは会社のコンペをきっかけに始めて、今も楽しんでいる
 - ウェアが可愛いのも続ける理由のひとつ
 - 夫婦・カップルで楽しめる趣味として、30代女性にも広がっている
 
@@ -169,11 +169,11 @@ meta_description: 30代から始めるおすすめの趣味を男女別・ひと
 
 「ゲームは趣味と言いにくい」という声を聞くが、何時間でも集中できるならそれは本物の趣味だ。ひとりで楽しむのはもちろん、オンラインでつながる遊びとしても機能する。
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/dekataro-icon.png","balloonName":"デカ太郎","balloonCol":"green"} -->
+<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/dekataro-icon.png","balloonName":"がく","balloonCol":"green"} -->
 <p>「ゲームって趣味って言っていいですよね？」</p>
 <!-- /wp:loos/balloon -->
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/yomeshi-icon.png","balloonName":"ヨメ氏","balloonCol":"red","balloonAlign":"right"} -->
+<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/yomeshi-icon.png","balloonName":"はるさん","balloonCol":"red","balloonAlign":"right"} -->
 <p>「没頭できてるなら、それが趣味でしょ」</p>
 <!-- /wp:loos/balloon -->
 
@@ -191,7 +191,7 @@ meta_description: 30代から始めるおすすめの趣味を男女別・ひと
 
 「夫婦の共通趣味がほしい」という話を、同年代の友人からよく聞く。
 
-旅行は共通になりやすいが、日常的に続けられる趣味は意外と少ない。デカ太郎家が実際にやっている趣味から、夫婦で続けやすかったものを紹介する。
+旅行は共通になりやすいが、日常的に続けられる趣味は意外と少ない。うちが実際にやっている趣味から、夫婦で続けやすかったものを紹介する。
 
 ### ゴルフ
 
@@ -199,7 +199,7 @@ meta_description: 30代から始めるおすすめの趣味を男女別・ひと
 
 <mark>「それぞれの楽しみ方ができる趣味」だから続く。</mark>
 
-最初はシミュレーションゴルフで基礎を叩き込んだ。今は打ちっ放しの練習とラウンドを定期的に続けている。ヨメ氏は「誘えば来てくれる」くらいの温度感だ。温度差があっても、コースに出れば同じ空間にいられる。
+最初はシミュレーションゴルフで基礎を叩き込んだ。今は打ちっ放しの練習とラウンドを定期的に続けている。はるさんは「誘えば来てくれる」くらいの温度感だ。温度差があっても、コースに出れば同じ空間にいられる。
 
 ### キャンプ
 
@@ -215,11 +215,11 @@ meta_description: 30代から始めるおすすめの趣味を男女別・ひと
 
 「週末に一緒に料理する」という習慣があると、外食費が下がってコミュニケーションも増える。DINKs的には一石三鳥。
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/yomeshi-icon.png","balloonName":"ヨメ氏","balloonCol":"red","balloonAlign":"right"} -->
+<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/yomeshi-icon.png","balloonName":"はるさん","balloonCol":"red","balloonAlign":"right"} -->
 <p>「週末、パン焼いてみようかな」</p>
 <!-- /wp:loos/balloon -->
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/dekataro-icon.png","balloonName":"デカ太郎","balloonCol":"green"} -->
+<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/dekataro-icon.png","balloonName":"がく","balloonCol":"green"} -->
 <p>「俺、カルボナーラ作る」</p>
 <!-- /wp:loos/balloon -->
 
@@ -244,10 +244,10 @@ meta_description: 30代から始めるおすすめの趣味を男女別・ひと
 
 僕はゴルフがそれになった。[夫婦で共通の趣味にゴルフを選んだ理由](https://dekataro.com/fuufu-golf-kyotsu-shumi/)はこちら。
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/dekataro-icon.png","balloonName":"デカ太郎","balloonCol":"green"} -->
+<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/dekataro-icon.png","balloonName":"がく","balloonCol":"green"} -->
 <p>「趣味ほしいな、ってなんとなく思ってた30代のころの自分に教えてあげたい」</p>
 <!-- /wp:loos/balloon -->
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/yomeshi-icon.png","balloonName":"ヨメ氏","balloonCol":"red","balloonAlign":"right"} -->
+<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/yomeshi-icon.png","balloonName":"はるさん","balloonCol":"red","balloonAlign":"right"} -->
 <p>「何をって？ゴルフでしょ」</p>
 <!-- /wp:loos/balloon -->
