@@ -88,22 +88,25 @@ dekataro/
 
 ### カテゴリ（親子13分類）
 ※ slug はWordPress実態に合わせた正確な値。記事YAMLの`category:`にはこのslugを使う。
+※ **1記事につき子カテゴリー1つだけ**を設定する。親カテゴリーは設定不要。
 
 | カテゴリ | slug | WP ID | 階層 |
 |---|---|---|---|
-| お金と住まい | money-home | 17 | 親 |
-| ーお金 | money | 5 | 子 |
-| 働き方とこれから | work-future | 19 | 親 |
-| ー仕事 | work | 1 | 子 |
-| 夫婦とDINKs | dinks-couple | 16 | 親 |
-| ー夫婦 | couple | 10 | 子 |
-| 柴犬との暮らし | shiba-life | 20 | 親 |
-| ー柴犬 | shiba | 2 | 子 |
-| 趣味と休日 | hobbies-weekend | 18 | 親 |
+| 食事の時短 | food-time-saving | 21 | 親 |
+| ー宅配弁当・宅食 | food-delivery | 25 | 子 |
+| ー朝食の時短・完全栄養食 | morning-routine | 26 | 子 |
+| ーラクする自炊・レシピ | cooking-hack | 27 | 子 |
+| 家事の効率化 | home-efficiency | 22 | 親 |
+| ー家事代行サービス | housekeeping | 28 | 子 |
+| ー時短家電・アイテム | appliances | 29 | 子 |
+| DINKsの暮らし | dinks-life | 23 | 親 |
+| ーお金とキャリア | money-career | 30 | 子 |
+| ー夫婦のルール | couple-rules | 31 | 子 |
+| ー柴犬との暮らし | shiba-life | 20 | 子 |
+| 大人の趣味 | adult-hobbies | 24 | 親 |
 | ーキャンプ | camp | 12 | 子 |
 | ーゴルフ | golf | 11 | 子 |
-| ー筋トレ | training | 13 | 子 |
-| ー趣味 | hobby | 15 | 子 |
+| ー筋トレ・健康 | training | 13 | 子 |
 
 ### 文章スタイル
 - 書き手（がく）の一人称視点（本文一人称は「僕」）
@@ -147,12 +150,12 @@ dekataro/
 ### ふきだしブロック形式
 ```html
 <!-- がく（左・グリーン） -->
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/2023ca28a31802a5b5dc3663a06c28e1.jpg","balloonName":"がく","balloonCol":"green"} -->
+<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/2023ca28a31802a5b5dc3663a06c28e1-1.jpg","balloonName":"がく","balloonCol":"green"} -->
 <p>セリフ</p>
 <!-- /wp:loos/balloon -->
 
 <!-- はるさん（右・レッド） -->
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/ef6fcf9322f5cc158a738654b8c8f0a7.jpg","balloonName":"はるさん","balloonCol":"red","balloonAlign":"right"} -->
+<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/ef6fcf9322f5cc158a738654b8c8f0a7-1.jpg","balloonName":"はるさん","balloonCol":"red","balloonAlign":"right"} -->
 <p>セリフ</p>
 <!-- /wp:loos/balloon -->
 ```
