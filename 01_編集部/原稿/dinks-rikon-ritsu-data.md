@@ -1,5 +1,5 @@
 ---
-title: "DINKsの離婚率5倍は本当？4年目夫婦が実践する離婚対策3つ"
+title: "DINKsの離婚率5倍は本当？4年目夫婦が実践する離婚対策4つ"
 slug: "dinks-rikon-ritsu-data"
 meta_description: "「子なし離婚率は子あり夫婦の5倍」というデータは統計に欠陥があり鵜呑みにできない。DINKs特有の離婚リスクと、結婚4年目夫婦が実際に実践している不仲対策を解説。"
 category: "couple-rules"
@@ -235,7 +235,7 @@ status: publish
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">年に1回は「今の気持ち」を確認する</h3>
+<h3 class="wp-block-heading">① 年に1回は「今の気持ち」を確認する</h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -247,7 +247,7 @@ status: publish
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">家計を見える化する</h3>
+<h3 class="wp-block-heading">② 家計を見える化する</h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -259,7 +259,7 @@ status: publish
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">家事の「総量」を削る——分担より先にやること</h3>
+<h3 class="wp-block-heading">③ 家事の「総量」を削る——分担より先にやること</h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -325,7 +325,7 @@ https://dekataro.com/nosh-fuufu-review/
 <!-- /wp:embed -->
 
 <!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">「ふたりのイベント」を意識的に作る</h3>
+<h3 class="wp-block-heading">④ 「ふたりのイベント」を意識的に作る</h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -336,8 +336,8 @@ https://dekataro.com/nosh-fuufu-review/
 <p>月1の外食でも、半年に1回の旅行でもいい。「いつもと違う時間」を意識的に作ることが、関係をリフレッシュさせる。</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"level":3} -->
-<h3 class="wp-block-heading">うちが4年間「離婚」という言葉を口にしたことがない理由</h3>
+<!-- wp:heading -->
+<h2 class="wp-block-heading">うちが4年間「離婚」を口にしなかった理由</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -399,7 +399,7 @@ https://dekataro.com/nosh-fuufu-review/
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>対策は3つ。年1回の気持ちの確認、家計の見える化、そして家事の総量を削ること。分担の公平化より、総量を減らすほうが夫婦の余白は増える。</p>
+<p>対策は4つ。年1回の気持ちの確認、家計の見える化、家事の総量を削ること、そして意識的にふたりのイベントを作ること。分担の公平化より、総量を減らすほうが夫婦の余白は増える。</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
