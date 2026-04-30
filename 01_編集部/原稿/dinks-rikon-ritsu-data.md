@@ -1,5 +1,5 @@
 ---
-title: "DINKsの離婚率「5倍」は本当？4年目夫婦が実践する不仲対策"
+title: "DINKsの離婚率5倍は本当？4年目夫婦が実践する離婚対策3つ"
 slug: "dinks-rikon-ritsu-data"
 meta_description: "「子なし離婚率は子あり夫婦の5倍」というデータは統計に欠陥があり鵜呑みにできない。DINKs特有の離婚リスクと、結婚4年目夫婦が実際に実践している不仲対策を解説。"
 category: "couple-rules"
