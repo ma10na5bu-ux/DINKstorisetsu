@@ -169,11 +169,11 @@ meta_description: 30代から始めるおすすめの趣味を男女別・ひと
 
 「ゲームは趣味と言いにくい」という声を聞くが、何時間でも集中できるならそれは本物の趣味だ。ひとりで楽しむのはもちろん、オンラインでつながる遊びとしても機能する。
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/dekataro-icon.png","balloonName":"がく","balloonCol":"green"} -->
+<!-- wp:loos/balloon {"balloonIcon":"http://dekataro.com/wp-content/uploads/2026/05/2023ca28a31802a5b5dc3663a06c28e1.jpg","balloonName":"がく","balloonCol":"green"} -->
 <p>「ゲームって趣味って言っていいですよね？」</p>
 <!-- /wp:loos/balloon -->
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/yomeshi-icon.png","balloonName":"はるさん","balloonCol":"red","balloonAlign":"right"} -->
+<!-- wp:loos/balloon {"balloonIcon":"http://dekataro.com/wp-content/uploads/2026/05/ef6fcf9322f5cc158a738654b8c8f0a7.jpg","balloonName":"はるさん","balloonCol":"red","balloonAlign":"right"} -->
 <p>「没頭できてるなら、それが趣味でしょ」</p>
 <!-- /wp:loos/balloon -->
 
@@ -215,11 +215,11 @@ meta_description: 30代から始めるおすすめの趣味を男女別・ひと
 
 「週末に一緒に料理する」という習慣があると、外食費が下がってコミュニケーションも増える。DINKs的には一石三鳥。
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/yomeshi-icon.png","balloonName":"はるさん","balloonCol":"red","balloonAlign":"right"} -->
+<!-- wp:loos/balloon {"balloonIcon":"http://dekataro.com/wp-content/uploads/2026/05/ef6fcf9322f5cc158a738654b8c8f0a7.jpg","balloonName":"はるさん","balloonCol":"red","balloonAlign":"right"} -->
 <p>「週末、パン焼いてみようかな」</p>
 <!-- /wp:loos/balloon -->
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/dekataro-icon.png","balloonName":"がく","balloonCol":"green"} -->
+<!-- wp:loos/balloon {"balloonIcon":"http://dekataro.com/wp-content/uploads/2026/05/2023ca28a31802a5b5dc3663a06c28e1.jpg","balloonName":"がく","balloonCol":"green"} -->
 <p>「俺、カルボナーラ作る」</p>
 <!-- /wp:loos/balloon -->
 
@@ -244,10 +244,10 @@ meta_description: 30代から始めるおすすめの趣味を男女別・ひと
 
 僕はゴルフがそれになった。[夫婦で共通の趣味にゴルフを選んだ理由](https://dekataro.com/fuufu-golf-kyotsu-shumi/)はこちら。
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/dekataro-icon.png","balloonName":"がく","balloonCol":"green"} -->
+<!-- wp:loos/balloon {"balloonIcon":"http://dekataro.com/wp-content/uploads/2026/05/2023ca28a31802a5b5dc3663a06c28e1.jpg","balloonName":"がく","balloonCol":"green"} -->
 <p>「趣味ほしいな、ってなんとなく思ってた30代のころの自分に教えてあげたい」</p>
 <!-- /wp:loos/balloon -->
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/yomeshi-icon.png","balloonName":"はるさん","balloonCol":"red","balloonAlign":"right"} -->
+<!-- wp:loos/balloon {"balloonIcon":"http://dekataro.com/wp-content/uploads/2026/05/ef6fcf9322f5cc158a738654b8c8f0a7.jpg","balloonName":"はるさん","balloonCol":"red","balloonAlign":"right"} -->
 <p>「何をって？ゴルフでしょ」</p>
 <!-- /wp:loos/balloon -->

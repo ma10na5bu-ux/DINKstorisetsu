@@ -29,7 +29,7 @@ category: "work"
 
 日曜の夜になると、なんとなく気が重くなる。月曜の朝、目覚ましが鳴るたびに「あと5分」を3回繰り返す。
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/yomeshi-icon.png","balloonName":"はるさん","balloonCol":"red","balloonAlign":"right"} -->
+<!-- wp:loos/balloon {"balloonIcon":"http://dekataro.com/wp-content/uploads/2026/05/ef6fcf9322f5cc158a738654b8c8f0a7.jpg","balloonName":"はるさん","balloonCol":"red","balloonAlign":"right"} -->
 <p>「日曜の夜、毎週ため息ついてるよね」</p>
 <!-- /wp:loos/balloon -->
 
@@ -51,7 +51,7 @@ category: "work"
 
 結果はどれも「なるほど」とは思う。でも「これだ！」にはならない。
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/dekataro-icon.png","balloonName":"がく","balloonCol":"green"} -->
+<!-- wp:loos/balloon {"balloonIcon":"http://dekataro.com/wp-content/uploads/2026/05/2023ca28a31802a5b5dc3663a06c28e1.jpg","balloonName":"がく","balloonCol":"green"} -->
 <p>「診断結果は"クリエイティブ系"って出たけど、具体的に何すればいいの？」</p>
 <!-- /wp:loos/balloon -->
 
@@ -79,11 +79,11 @@ category: "work"
 
 朝の表情が違う。仕事の話をするときの声のトーンが違う。帰ってきて「今日こんなことがあってさ」と楽しそうに話す。
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/yomeshi-icon.png","balloonName":"はるさん","balloonCol":"red","balloonAlign":"right"} -->
+<!-- wp:loos/balloon {"balloonIcon":"http://dekataro.com/wp-content/uploads/2026/05/ef6fcf9322f5cc158a738654b8c8f0a7.jpg","balloonName":"はるさん","balloonCol":"red","balloonAlign":"right"} -->
 <p>「今の仕事、大変だけど楽しいんだよね」</p>
 <!-- /wp:loos/balloon -->
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/dekataro-icon.png","balloonName":"がく","balloonCol":"green"} -->
+<!-- wp:loos/balloon {"balloonIcon":"http://dekataro.com/wp-content/uploads/2026/05/2023ca28a31802a5b5dc3663a06c28e1.jpg","balloonName":"がく","balloonCol":"green"} -->
 <p>「……うん、わかる。見ててわかる」</p>
 <!-- /wp:loos/balloon -->
 
@@ -152,11 +152,11 @@ category: "work"
 
 仕事探しも同じだと思う。
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/dekataro-icon.png","balloonName":"がく","balloonCol":"green"} -->
+<!-- wp:loos/balloon {"balloonIcon":"http://dekataro.com/wp-content/uploads/2026/05/2023ca28a31802a5b5dc3663a06c28e1.jpg","balloonName":"がく","balloonCol":"green"} -->
 <p>「やりたい仕事、まだ見つかってないけどさ」</p>
 <!-- /wp:loos/balloon -->
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/yomeshi-icon.png","balloonName":"はるさん","balloonCol":"red","balloonAlign":"right"} -->
+<!-- wp:loos/balloon {"balloonIcon":"http://dekataro.com/wp-content/uploads/2026/05/ef6fcf9322f5cc158a738654b8c8f0a7.jpg","balloonName":"はるさん","balloonCol":"red","balloonAlign":"right"} -->
 <p>「探してるんでしょ？　それでいいんじゃない」</p>
 <!-- /wp:loos/balloon -->
 

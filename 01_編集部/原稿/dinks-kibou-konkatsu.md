@@ -50,11 +50,11 @@ DINKs希望を婚活で伝えるのは勇気がいります。「引かれたら
 
 「育てられないから」ではなく「二人で人生を深めたいから」。同じ事実でも、伝え方で相手の受け取り方はまるで変わります。
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/dekataro-icon.png","balloonName":"がく","balloonCol":"green"} -->
+<!-- wp:loos/balloon {"balloonIcon":"http://dekataro.com/wp-content/uploads/2026/05/2023ca28a31802a5b5dc3663a06c28e1.jpg","balloonName":"がく","balloonCol":"green"} -->
 <p>僕たちは結婚前に子どもの話をした。あの会話がなかったら、今のDINKs生活はなかったと思う</p>
 <!-- /wp:loos/balloon -->
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/yomeshi-icon.png","balloonName":"はるさん","balloonCol":"red","balloonAlign":"right"} -->
+<!-- wp:loos/balloon {"balloonIcon":"http://dekataro.com/wp-content/uploads/2026/05/ef6fcf9322f5cc158a738654b8c8f0a7.jpg","balloonName":"はるさん","balloonCol":"red","balloonAlign":"right"} -->
 <p>あれは大事だったね。お互い同じ方向を向いてるってわかって安心した</p>
 <!-- /wp:loos/balloon -->
 

@@ -378,11 +378,11 @@ https://dekataro.com/nosh-fuufu-review/
 <p><a href="https://dekataro.com/dinks-wariai-nihon">DINKs夫婦の割合</a>は年々増えているが、その多くが「話し合って選んだ」という共通点を持つ。この事実は、思ったより重い気がしている。</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/2023ca28a31802a5b5dc3663a06c28e1-1.jpg","balloonName":"がく","balloonCol":"green"} -->
+<!-- wp:loos/balloon {"balloonIcon":"http://dekataro.com/wp-content/uploads/2026/05/2023ca28a31802a5b5dc3663a06c28e1.jpg","balloonName":"がく","balloonCol":"green"} -->
 <p>離婚を考えたことがないというより、考える隙間がない、って感じが近い。</p>
 <!-- /wp:loos/balloon -->
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/ef6fcf9322f5cc158a738654b8c8f0a7-1.jpg","balloonName":"はるさん","balloonCol":"red","balloonAlign":"right"} -->
+<!-- wp:loos/balloon {"balloonIcon":"http://dekataro.com/wp-content/uploads/2026/05/ef6fcf9322f5cc158a738654b8c8f0a7.jpg","balloonName":"はるさん","balloonCol":"red","balloonAlign":"right"} -->
 <p>これからもよろしくね。</p>
 <!-- /wp:loos/balloon -->
 

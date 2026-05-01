@@ -25,11 +25,11 @@ category: "work"
 
 僕もまったく同じだった。
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/dekataro-icon.png","balloonName":"デカ太郎","balloonCol":"green"} -->
+<!-- wp:loos/balloon {"balloonIcon":"http://dekataro.com/wp-content/uploads/2026/05/2023ca28a31802a5b5dc3663a06c28e1.jpg","balloonName":"がく","balloonCol":"green"} -->
 <p>「このままも不安。でも動くのも怖い」</p>
 <!-- /wp:loos/balloon -->
 
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/yomeshi-icon.png","balloonName":"ヨメ氏","balloonCol":"red","balloonAlign":"right"} -->
+<!-- wp:loos/balloon {"balloonIcon":"http://dekataro.com/wp-content/uploads/2026/05/ef6fcf9322f5cc158a738654b8c8f0a7.jpg","balloonName":"はるさん","balloonCol":"red","balloonAlign":"right"} -->
 <p>「怖いって分かってるなら、準備から始めればいいんじゃない？」</p>
 <!-- /wp:loos/balloon -->
 

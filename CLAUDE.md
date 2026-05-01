@@ -150,12 +150,12 @@ dekataro/
 ### ふきだしブロック形式
 ```html
 <!-- がく（左・グリーン） -->
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/2023ca28a31802a5b5dc3663a06c28e1-1.jpg","balloonName":"がく","balloonCol":"green"} -->
+<!-- wp:loos/balloon {"balloonIcon":"http://dekataro.com/wp-content/uploads/2026/05/2023ca28a31802a5b5dc3663a06c28e1.jpg","balloonName":"がく","balloonCol":"green"} -->
 <p>セリフ</p>
 <!-- /wp:loos/balloon -->
 
 <!-- はるさん（右・レッド） -->
-<!-- wp:loos/balloon {"balloonIcon":"https://dekataro.com/wp-content/uploads/2026/04/ef6fcf9322f5cc158a738654b8c8f0a7-1.jpg","balloonName":"はるさん","balloonCol":"red","balloonAlign":"right"} -->
+<!-- wp:loos/balloon {"balloonIcon":"http://dekataro.com/wp-content/uploads/2026/05/ef6fcf9322f5cc158a738654b8c8f0a7.jpg","balloonName":"はるさん","balloonCol":"red","balloonAlign":"right"} -->
 <p>セリフ</p>
 <!-- /wp:loos/balloon -->
 ```
