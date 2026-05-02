@@ -17,9 +17,11 @@ A couple in their early 30s sitting at a dining table together, looking at a sma
 - NO bright red, NO bright blue, NO vivid yellow, NO saturated colors
 
 【Composition】
-- Clean and simple, lots of white space / Key elements centered
+- The scene fills the full 16:9 canvas. NO letterboxing, NO empty borders at top or bottom.
+- Characters and key objects are large enough to anchor the image — they should feel present, not tiny.
+- Comfortable breathing room BETWEEN elements only. NO large empty zones around the edges.
 - IMPORTANT: Do NOT place any important elements in the bottom-right corner (the bottom-right 15% of the image will be cropped)
-- Magazine editorial feel, calm and sophisticated
+- Magazine editorial feel, calm and warm
 
 【Rules】
 - No text, no watermarks, no logos, no color swatches, no labels, no annotations

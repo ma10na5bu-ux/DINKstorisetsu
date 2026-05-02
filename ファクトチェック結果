@@ -1,24 +1,31 @@
-ここだけなら、**Q2は修正必須、Q3は表現調整推奨、Q4はそのままは危険**です。 [basefood.zendesk](https://basefood.zendesk.com/hc/ja/articles/360027099091-%E7%B6%99%E7%B6%9A%E3%82%B3%E3%83%BC%E3%82%B9%E3%82%92%E8%A7%A3%E7%B4%84%E3%81%97%E3%81%9F%E3%81%84)
+かなり良くなっています。**現時点で大きな致命傷はなく、90点にかなり近い**です。 [stat.go](https://www.stat.go.jp/data/kakei/sokuhou/tsuki/index.html)
+ただし、**このままだと1点だけ気になるのは「食費の比率も高く」の部分**で、ここは数字を伴わない言い方に直したほうが安全です。 [terasel](https://www.terasel.jp/media/savings/savings-tips/)
 
-## Q2. 定期便はいつでも解約できる？
-「マイページから手続きできる」は正しいです。 [basefood.zendesk](https://basefood.zendesk.com/hc/ja/articles/360027099091-%E7%B6%99%E7%B6%9A%E3%82%B3%E3%83%BC%E3%82%B9%E3%82%92%E8%A7%A3%E7%B4%84%E3%81%97%E3%81%9F%E3%81%84)
-ただし「いつでも」は不正確で、公式では**次回お届け予定日の5日前が解約期限**です。 [basefood.zendesk](https://basefood.zendesk.com/hc/ja/articles/360027099091-%E7%B6%99%E7%B6%9A%E3%82%B3%E3%83%BC%E3%82%B9%E3%82%92%E8%A7%A3%E7%B4%84%E3%81%97%E3%81%9F%E3%81%84)
-なので、文章は「マイページから解約可能。次回お届け予定日の5日前までに手続きが必要。」に直すのが安全です。 [basefood.zendesk](https://basefood.zendesk.com/hc/ja/articles/360027099091-%E7%B6%99%E7%B6%9A%E3%82%B3%E3%83%BC%E3%82%B9%E3%82%92%E8%A7%A3%E7%B4%84%E3%81%97%E3%81%9F%E3%81%84)
+## ファクト面でOKな点
+- 「二人以上の世帯の月平均消費支出は314,001円」「名目4.6%増・実質0.9%増」は、総務省の2025年平均結果と一致しています。 [moneystep](https://moneystep.co/archives/170123)
+- 家計管理の5パターン自体も、共働き夫婦向けの解説記事で一般的に扱われる分類と整合しています。 [loan.docomo.ne](https://loan.docomo.ne.jp/article/both_working/)
+- 「共通口座」「費目別分担」「お小遣い制」「片方管理」は、実務上よく紹介されるパターンです。 [smbc.co](https://www.smbc.co.jp/kojin/money-viva/olive-times/0022/)
 
-## Q3. 飽きてきたらどうすればいい？
-「13種類以上あるフレーバー」は、少なくとも今の情報では**言い切り方を少し弱める**のが無難です。 [lifehacker](https://www.lifehacker.jp/article/2409-lht-basebread/)
-直近の公式・紹介記事では、BASE BREADのフレーバーは8種や、それ以上の展開として紹介されており、時期や販売状況で変動しています。 [businessinsider](https://www.businessinsider.jp/article/2506-lht-basebread-a11/)
-なので「フレーバーは複数あり、時期によって変動します。メープル、チョコ、こしあんなどをローテーションしています。」くらいが安全です。 [lifehacker](https://www.lifehacker.jp/article/2409-lht-basebread/)
+## 直したい表現
+- 「食費の比率も高く」は、根拠数字が見えていないので弱いです。 [habitto](https://www.habitto.com/blogs/seikatsuhi-heikin-setai-nensuu-naiwake/)
+- ここは  
+  「食費も含め、家計全体で値上がり感が強い」  
+  くらいの表現にすると安全です。 [terasel](https://www.terasel.jp/media/savings/savings-tips/)
+- 「比率も高く」という断定を残すなら、食費比率の**出典を明示**したほうがいいです。 [terasel](https://www.terasel.jp/media/savings/savings-tips/)
 
-## Q4. 1食あたりの値段は？
-「継続コースで1食あたり約200〜250円」は、**現時点の公式表示とズレやすい**です。 [basefood.zendesk](https://basefood.zendesk.com/hc/ja/articles/900005765883-%E7%B6%99%E7%B6%9A%E3%82%B3%E3%83%BC%E3%82%B9%E3%81%A8%E3%81%AF%E3%81%AA%E3%82%93%E3%81%A7%E3%81%99%E3%81%8B)
-公式の継続コースは初回20%OFF、2回目以降10%OFFで、紹介記事の実例では**1袋186〜231円、1食分（2袋）で372〜462円前後**のレンジが見えます。 [meal.app-liv](https://meal.app-liv.jp/archive/141920/)
-したがって、FAQでは「1食分は選ぶ商品や袋数で変わりますが、継続コースでは概ね400円前後が目安」と書くほうが無難です。 [sala1](https://sala1.jp/column/base-bread-price/)
+## 体験談として安全な点
+- 住信SBIネット銀行やスマートライフデザイナーの利用は、**自分たちの運用実例**として書くなら問題ありません。 [yokoyyokojournal](https://www.yokoyyokojournal.com/smtbnet_joint_account/)
+- ただし「夫婦それぞれ共通カード」を一般機能のように読ませないよう、**“うちでは”** を付けると誤解が減ります。
+- 「お金で揉めるきっかけは、『どっちがいくら使ったか』が見えてしまうことだ」は、事実というより考え方なので、そのままでも大丈夫ですが、意見表現として扱うのが自然です。
 
-## 置き換え文
-そのまま使うなら、こう直すのがよいです。  
-- Q2. はい、マイページから解約できます。次回お届け予定日の5日前までに手続きしてください。 [basefood.zendesk](https://basefood.zendesk.com/hc/ja/articles/360027099091-%E7%B6%99%E7%B6%9A%E3%82%B3%E3%83%BC%E3%82%B9%E3%82%92%E8%A7%A3%E7%B4%84%E3%81%97%E3%81%9F%E3%81%84)
-- Q3. フレーバーは複数あり、時期によってラインナップが変わります。メープル、チョコ、こしあんなどをローテーションすると続けやすいです。 [businessinsider](https://www.businessinsider.jp/article/2506-lht-basebread-a11/)
-- Q4. 価格は商品やセット数で変わりますが、継続コースでは1食分で概ね400円前後が目安です。 [basefood.zendesk](https://basefood.zendesk.com/hc/ja/articles/900005765883-%E7%B6%99%E7%B6%9A%E3%82%B3%E3%83%BC%E3%82%B9%E3%81%A8%E3%81%AF%E3%81%AA%E3%82%93%E3%81%A7%E3%81%99%E3%81%8B)
+## 総合判定
+- **ファクトミスの危険度：低い**
+- **現状スコア：91点前後**
+- **公開してよいレベル：OK**
 
-必要なら次に、**FAQ全体を“記事にそのまま貼れる自然な日本語”で整形**して返します。
+## 最低限の修正案
+この1文だけ差し替えるのがおすすめです。  
+- 変更前: 「食費の比率も高く、「食費だけじゃなくて全体的に高くなった感じ」は数字にも表れている。」  
+- 変更後: 「食費も含め、家計全体で値上がり感が強い。」
+
+この修正を入れれば、かなり安心して出せます。
