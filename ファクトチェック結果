@@ -1,40 +1,39 @@
-以下、**致命的なファクトミスになりやすい箇所**を中心にチェックしました。結論として、記事全体の主張は成立していますが、**数値・定義・引用の出し方**にいくつか修正したほうがいい点があります。 [thehistoryofenglish](https://www.thehistoryofenglish.com/dinkwad-meaning-origin-usage)
+かなり良くなっています。**致命傷になりそうな箇所はほぼ解消**していて、残るのは「言い切りすぎ」と「表記ゆれ」の微調整です。 [time](https://time.com/6250834/dink-tiktok-double-income-no-kids/)
 
-## 要修正の可能性が高い点
+## まだ直したい点
 
-- **「DINKWAD」の意味がブレています。**  
-  記事内では「Double Income, No Kids, With A Dog」としていますが、一般的には「Dual income, no kids, with a dog」と説明されることが多いです。綴りや表現は大きな問題ではありませんが、**略語の由来説明としては“Dual”のほうが自然**です。 [slang](https://slang.net/meaning/dinkwad)
+- **DINKWADの表記は少しだけ注意**です。  
+  「Dual income, no kids, with a dog」は通じますが、検索上よく見かけるのは「Double income, no kids, with a dog」でもあります。どちらも意図は伝わるので、記事内では「DINKWAD（no kids, with a dog）」のように、略語の意味だけをシンプルに書くのも安全です。 [kinship](https://www.kinship.com/uk/dog-lifestyle/dinkwads-and-their-dogs)
 
-- **「DINKs夫婦は平均で毎日2.4時間、年間約36日分の自由時間」は、出典の裏取りが弱いです。**  
-  検索で確認できたのは、一般成人の自由時間に関する研究で「約2〜5時間が目安」「2.5時間前後が最適」という話で、**DINKsに限定した“平均2.4時間”という数値までは確認できませんでした**。この数字は、断定よりも「以前調べたところ〜」のようにやや弱めるか、出典を明示できるなら差し替えたほうが安全です。 [apa](https://www.apa.org/news/press/releases/2021/09/too-much-free-time)
+- **「後悔はない」は主観としてOKですが、見出しとの整合を少し意識するとさらに自然です。**  
+  今の本文は「後悔がないというより、今の暮らしが好き」と補足しているので、結論は「後悔しないというより、今の暮らしが好きだ」のほうが、本文ときれいに一致します。これはファクトというより表現の問題です。 [time](https://time.com/6250834/dink-tiktok-double-income-no-kids/)
 
-- **「25カ国の調査では子どもがいない夫婦のほうが感情的なつながりが強い」は、現状だとやや断定が強いです。**  
-  確認できた研究では、25カ国のデータで「子どもの有無と intimacy や love に**有意な全体差はない**」という結果が出ています。つまり、「子どもがいない夫婦のほうが強い」と言い切るより、**“差は明確ではない”** と書くほうがファクトに合います。 [pmc.ncbi.nlm.nih](https://pmc.ncbi.nlm.nih.gov/articles/PMC12644206/)
+- **「25カ国の研究では、子どもの有無と感情的なつながりに大きな差は見られなかった」は安全寄りになりましたが、なお“感情的なつながり”は少し曖昧です。**  
+  研究ベースで言うなら、`intimacy` や `love` など具体的な語に合わせたほうが、元の調査結果と噛み合いやすいです。つまり「感情的なつながり」より「親密さ」か「愛情」に寄せると、引用として自然です。 [pmc.ncbi.nlm.nih](https://pmc.ncbi.nlm.nih.gov/articles/PMC12644206/)
 
-- **「時間貧乏」という表現は、一般用語というより説明用の言い回しです。**  
-  これは致命的ミスではありませんが、学術的・一般的には「time poverty（時間不足）」のような表現のほうが通りやすいです。食事や家事で時間が圧迫される、という文脈は研究とも整合します。 [academic.oup](https://academic.oup.com/aepp/article/35/1/89/8235)
+## 安全な修正文
 
-## そのままでよい点
+そのまま差し替えるなら、次の2か所が特におすすめです。
 
-- **BASE FOOD と nosh の説明は概ね問題ありません。**  
-  BASE FOOD は公式サイトで「完全栄養食」と案内されており、nosh も公式で「電子レンジで約6分30秒〜7分」と案内されています。したがって、「朝は固定化」「疲れた日はnoshを使う」という運用説明は、少なくともサービス仕様としては無理がありません。 [basefood.co](https://basefood.co.jp)
+- 「正確にはDINKWAD（Dual income, no kids, with a dog）というやつだ。」  
+  → 「正確にはDINKWAD（no kids, with a dog）というやつだ。」
 
-- **FIREよりFILEの考え方に共感する、という記述も大枠では問題ありません。**  
-  ただし FILE は一般的な標準略語というより、FIREの派生として使われる表現です。なので、**“よく知られた正式用語”のような書き方は避けたほうが無難**です。 [moneyflamingo](https://www.moneyflamingo.com/what-does-fire-really-stand-for/)
+- 「実際、25カ国の研究では、子どもの有無と感情的なつながりに大きな差は見られなかったという報告もある。」  
+  → 「実際、25カ国の研究では、子どもの有無と親密さに大きな差は見られなかったという報告もある。」 [pmc.ncbi.nlm.nih](https://pmc.ncbi.nlm.nih.gov/articles/PMC12644206/)
 
-## 直したほうが安全な書き方
+## そのままで問題ない点
 
-- 「以前調べたら、DINKs夫婦は平均で毎日2.4時間…」  
-  → 「以前調べたところ、自由時間はかなり限られやすいようだ。体感としても近い。」 [audacy](https://www.audacy.com/wwl/articles/university-studies-show-25-hours-free-time-ideal-good-work-life-balance)
+- **BASE FOOD は「完全栄養食」という説明で概ねOK**です。公式サイトでも、1食あたり1日に必要な栄養素の1/3が含まれる旨が案内されています。 [basefood.co](https://basefood.co.jp)
 
-- 「25カ国の調査では子どもがいない夫婦のほうが感情的なつながりが強い」  
-  → 「25カ国の研究では、子どもの有無と intimacy に大きな差は見られなかった。」 [pmc.ncbi.nlm.nih](https://pmc.ncbi.nlm.nih.gov/articles/PMC12644206/)
+- **nosh の「疲れた日は出すだけ」「温め時間が短い」という文脈も問題ありません。**  
+  公式の案内では、電子レンジで約6分30秒〜7分の解凍時間が示されています。 [nosh](https://nosh.jp/howtoeat)
 
-- 「DINKWAD（Double Income, No Kids, With A Dog）」  
-  → 「DINKWAD（Dual income, no kids, with a dog）」 [dictionaryblog.cambridge](https://dictionaryblog.cambridge.org/2024/05/20/new-words-20-may-2024/)
+- **「時間貧乏」を防ぐために意思決定を減らす、というロジックも自然です。**  
+  食事まわりの意思決定が時間を奪う、という主張は研究文脈とも整合します。 [academic.oup](https://academic.oup.com/aepp/article/35/1/89/8235)
 
-## 総評
+## 総合判定
 
-致命的なのは、**25カ国研究の解釈**と**DINKsの自由時間2.4時間という数値**です。ここはそのままだと、読者から「ソースあるの？」と突っ込まれやすいです。逆に、BASE FOOD / nosh / 生活運用の話は概ね整合しているので、**数値の根拠を弱めるか差し替えれば、記事の信頼性はかなり上がります。** [nosh](https://nosh.jp/howtoeat)
+現状の記事は、**ファクトミスで致命的に崩れる状態ではありません。**  
+残る修正は、`DINKWAD` の説明を少し簡潔にすることと、`25カ国の研究` の表現を少し具体化することくらいです。 [kinship](https://www.kinship.com/uk/dog-lifestyle/dinkwads-and-their-dogs)
 
-必要なら次に、この記事の**「ファクト的に安全な修正版」**をそのままコピペできる形で作れます。
+必要なら次に、**「記事としてそのまま公開できる最終版」**に、言い回しまで整えて赤入れします。
