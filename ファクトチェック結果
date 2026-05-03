@@ -1,31 +1,40 @@
-かなり良くなっています。**現時点で大きな致命傷はなく、90点にかなり近い**です。 [stat.go](https://www.stat.go.jp/data/kakei/sokuhou/tsuki/index.html)
-ただし、**このままだと1点だけ気になるのは「食費の比率も高く」の部分**で、ここは数字を伴わない言い方に直したほうが安全です。 [terasel](https://www.terasel.jp/media/savings/savings-tips/)
+以下、**致命的なファクトミスになりやすい箇所**を中心にチェックしました。結論として、記事全体の主張は成立していますが、**数値・定義・引用の出し方**にいくつか修正したほうがいい点があります。 [thehistoryofenglish](https://www.thehistoryofenglish.com/dinkwad-meaning-origin-usage)
 
-## ファクト面でOKな点
-- 「二人以上の世帯の月平均消費支出は314,001円」「名目4.6%増・実質0.9%増」は、総務省の2025年平均結果と一致しています。 [moneystep](https://moneystep.co/archives/170123)
-- 家計管理の5パターン自体も、共働き夫婦向けの解説記事で一般的に扱われる分類と整合しています。 [loan.docomo.ne](https://loan.docomo.ne.jp/article/both_working/)
-- 「共通口座」「費目別分担」「お小遣い制」「片方管理」は、実務上よく紹介されるパターンです。 [smbc.co](https://www.smbc.co.jp/kojin/money-viva/olive-times/0022/)
+## 要修正の可能性が高い点
 
-## 直したい表現
-- 「食費の比率も高く」は、根拠数字が見えていないので弱いです。 [habitto](https://www.habitto.com/blogs/seikatsuhi-heikin-setai-nensuu-naiwake/)
-- ここは  
-  「食費も含め、家計全体で値上がり感が強い」  
-  くらいの表現にすると安全です。 [terasel](https://www.terasel.jp/media/savings/savings-tips/)
-- 「比率も高く」という断定を残すなら、食費比率の**出典を明示**したほうがいいです。 [terasel](https://www.terasel.jp/media/savings/savings-tips/)
+- **「DINKWAD」の意味がブレています。**  
+  記事内では「Double Income, No Kids, With A Dog」としていますが、一般的には「Dual income, no kids, with a dog」と説明されることが多いです。綴りや表現は大きな問題ではありませんが、**略語の由来説明としては“Dual”のほうが自然**です。 [slang](https://slang.net/meaning/dinkwad)
 
-## 体験談として安全な点
-- 住信SBIネット銀行やスマートライフデザイナーの利用は、**自分たちの運用実例**として書くなら問題ありません。 [yokoyyokojournal](https://www.yokoyyokojournal.com/smtbnet_joint_account/)
-- ただし「夫婦それぞれ共通カード」を一般機能のように読ませないよう、**“うちでは”** を付けると誤解が減ります。
-- 「お金で揉めるきっかけは、『どっちがいくら使ったか』が見えてしまうことだ」は、事実というより考え方なので、そのままでも大丈夫ですが、意見表現として扱うのが自然です。
+- **「DINKs夫婦は平均で毎日2.4時間、年間約36日分の自由時間」は、出典の裏取りが弱いです。**  
+  検索で確認できたのは、一般成人の自由時間に関する研究で「約2〜5時間が目安」「2.5時間前後が最適」という話で、**DINKsに限定した“平均2.4時間”という数値までは確認できませんでした**。この数字は、断定よりも「以前調べたところ〜」のようにやや弱めるか、出典を明示できるなら差し替えたほうが安全です。 [apa](https://www.apa.org/news/press/releases/2021/09/too-much-free-time)
 
-## 総合判定
-- **ファクトミスの危険度：低い**
-- **現状スコア：91点前後**
-- **公開してよいレベル：OK**
+- **「25カ国の調査では子どもがいない夫婦のほうが感情的なつながりが強い」は、現状だとやや断定が強いです。**  
+  確認できた研究では、25カ国のデータで「子どもの有無と intimacy や love に**有意な全体差はない**」という結果が出ています。つまり、「子どもがいない夫婦のほうが強い」と言い切るより、**“差は明確ではない”** と書くほうがファクトに合います。 [pmc.ncbi.nlm.nih](https://pmc.ncbi.nlm.nih.gov/articles/PMC12644206/)
 
-## 最低限の修正案
-この1文だけ差し替えるのがおすすめです。  
-- 変更前: 「食費の比率も高く、「食費だけじゃなくて全体的に高くなった感じ」は数字にも表れている。」  
-- 変更後: 「食費も含め、家計全体で値上がり感が強い。」
+- **「時間貧乏」という表現は、一般用語というより説明用の言い回しです。**  
+  これは致命的ミスではありませんが、学術的・一般的には「time poverty（時間不足）」のような表現のほうが通りやすいです。食事や家事で時間が圧迫される、という文脈は研究とも整合します。 [academic.oup](https://academic.oup.com/aepp/article/35/1/89/8235)
 
-この修正を入れれば、かなり安心して出せます。
+## そのままでよい点
+
+- **BASE FOOD と nosh の説明は概ね問題ありません。**  
+  BASE FOOD は公式サイトで「完全栄養食」と案内されており、nosh も公式で「電子レンジで約6分30秒〜7分」と案内されています。したがって、「朝は固定化」「疲れた日はnoshを使う」という運用説明は、少なくともサービス仕様としては無理がありません。 [basefood.co](https://basefood.co.jp)
+
+- **FIREよりFILEの考え方に共感する、という記述も大枠では問題ありません。**  
+  ただし FILE は一般的な標準略語というより、FIREの派生として使われる表現です。なので、**“よく知られた正式用語”のような書き方は避けたほうが無難**です。 [moneyflamingo](https://www.moneyflamingo.com/what-does-fire-really-stand-for/)
+
+## 直したほうが安全な書き方
+
+- 「以前調べたら、DINKs夫婦は平均で毎日2.4時間…」  
+  → 「以前調べたところ、自由時間はかなり限られやすいようだ。体感としても近い。」 [audacy](https://www.audacy.com/wwl/articles/university-studies-show-25-hours-free-time-ideal-good-work-life-balance)
+
+- 「25カ国の調査では子どもがいない夫婦のほうが感情的なつながりが強い」  
+  → 「25カ国の研究では、子どもの有無と intimacy に大きな差は見られなかった。」 [pmc.ncbi.nlm.nih](https://pmc.ncbi.nlm.nih.gov/articles/PMC12644206/)
+
+- 「DINKWAD（Double Income, No Kids, With A Dog）」  
+  → 「DINKWAD（Dual income, no kids, with a dog）」 [dictionaryblog.cambridge](https://dictionaryblog.cambridge.org/2024/05/20/new-words-20-may-2024/)
+
+## 総評
+
+致命的なのは、**25カ国研究の解釈**と**DINKsの自由時間2.4時間という数値**です。ここはそのままだと、読者から「ソースあるの？」と突っ込まれやすいです。逆に、BASE FOOD / nosh / 生活運用の話は概ね整合しているので、**数値の根拠を弱めるか差し替えれば、記事の信頼性はかなり上がります。** [nosh](https://nosh.jp/howtoeat)
+
+必要なら次に、この記事の**「ファクト的に安全な修正版」**をそのままコピペできる形で作れます。
