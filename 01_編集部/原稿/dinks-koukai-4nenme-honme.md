@@ -1,5 +1,5 @@
 ---
-title: "DINKs後悔しない？4年目本音と時間貧乏を防ぐ仕組み化"
+title: "DINKsは後悔する？4年目夫婦の本音と時間貧乏対策"
 slug: "dinks-koukai-4nenme-honme"
 category: "couple-rules"
 meta_description: "DINKs4年目夫婦の本音。後悔がない理由と、共働きの「時間貧乏」を防ぐ食事の仕組み化（BASE FOOD×nosh）を解説。よくある疑問にも答えます。"
