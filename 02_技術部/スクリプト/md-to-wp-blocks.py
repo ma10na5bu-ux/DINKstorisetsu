@@ -94,7 +94,7 @@ def convert_table(lines, start_index):
         return None, 0
 
     # 2行目がセパレータ（---）かチェック
-    is_separator = all(re.match(r'^-+$', c.strip()) for c in rows[1])
+    is_separator = all(re.match(r'^:?-+:?$', c.strip()) for c in rows[1])
     if not is_separator:
         return None, 0
 
