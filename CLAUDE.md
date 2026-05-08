@@ -284,40 +284,33 @@ Draw a wide illustration (16:9 aspect ratio, 1200×630px).
 1. プリフライトチェック（`.env` の WP認証キー存在確認のみ。Notionチェック不要）
 2. がくが記事テーマ・キーワードを直接指定して執筆開始（ネタ帳の候補提示・ヒアリング不要）
 
-### Phase 2: リサーチ＋構成（✅承認②）
-5. **並行実行**
-   - **NotebookLM概要レポート（がくが手動実施）→ Perplexityでファクトチェック（がくが手動実施）**
-   - **ラッコキーワードでサジェスト取得（がくが手動実施）→ Claudeで心理的ニーズ分析**
-   - 渡すファイル：概要レポート・ファクトチェック結果・サジェストキーワード一覧の3点
-6. **競合分析**：対策キーワードでGoogle検索上位2サイトの構成を確認（WebSearch/WebFetch）
-   - 記事タイプ問わず全記事で実施
-   - 競合が扱っていない独自要素（体験・データ）を特定
+### Phase 2: リサーチ＋構成（✅承認）
+5. **がくがPerplexityで実施**：検索意図・競合構成・論点抽出・サジェストKW
+6. **がくがClaudeに渡すもの**：Perplexity出力の要約（重要論点の箇条書き＋競合との差分＋勝ち筋）＋記事の目的・CTA・想定読者を1行
+   - 3点ファイル（概要レポート・ファクトチェック・サジェストKW）の全量渡しは不要
 7. H2・H3の見出し構成案を作成し、がくに提示
 8. がくが構成を承認（修正があればここで反映）
 
-### Phase 3: 執筆＋レビュー＋監修（✅承認③）
-8. 執筆（Markdown形式）
+### Phase 3: 執筆＋editorial-check（✅提出）
+9. 執筆（Markdown形式）
    - `01_編集部/knowledge/` 内の過去記事を参照し、文体・ふきだしのリズムを踏襲する
-   - 内部リンク候補は Phase 1 で読んだネタ帳.mdの公開済み一覧から選ぶ（追加コスト0）
+   - 内部リンク候補はネタ帳.mdの公開済み一覧から選ぶ
    - **分割執筆ルール**: H2が5つ以上の記事はH2単位で生成・確認を繰り返す（後半の品質劣化防止）
-9. 並列実行: editorial-check + fact-check + アイキャッチプロンプト生成
-10. がくに監修依頼（体験の嘘チェック・fact-checkの🔍人間確認項目）
+10. `/editorial-check` を実施（文体・構成・重複・読みやすさ）
+11. 数値・断定・出典不明箇所に `FC` マークを付与してがくに提出
 
-### Phase 4: アイキャッチ画像（全自動）
-11. generate-eyecatch.py でアイキャッチ生成・リサイズ（自動）
-    ```
-    python3 02_技術部/スクリプト/generate-eyecatch.py {slug}
-    ```
-    → `01_編集部/画像/{slug}_eyecatch.jpg` が出力される
+### Phase 4: ファクト確認＋最終監修（✅承認）
+12. **がくがFC箇所のみPerplexityで確認**
+13. 確認結果をClaudeに戻す → Claudeが修正反映
+14. がくが最終監修（体験の嘘チェック・公開可否を判断）
 
 ### Phase 5: 公開（全自動）
-14. 画像アップロード（curl -F multipart形式。--data-binaryはWAF 403）
-15. wp-post.py で記事投稿（**必ず `--auto --publish --media <ID>` を付ける**）
+15. wp-post.py で記事投稿（**必ず `--auto --publish` を付ける**）
     ```
-    python3 02_技術部/スクリプト/wp-post.py "原稿ファイル.md" --auto --publish --media <画像ID>
+    python3 02_技術部/スクリプト/wp-post.py "原稿ファイル.md" --auto --publish
     ```
     - `--auto`: YAMLフロントマターからtitle・slug・meta_descriptionを自動読み込み（必須）
-    - `--media`: アイキャッチのmedia ID（`--eyecatch-id`は存在しない）
+    - `--media <ID>`: アイキャッチを別途用意した場合のみ付ける（省略可）
 16. wp-post.pyの出力でslug・title・linkを確認。スラッグが`{id}-2`等の場合のみAPIで修正
 17. `01_編集部/ネタ帳.md` を更新（アイデア欄から削除→公開済み欄に追記）
 18. git commit + push
@@ -331,8 +324,8 @@ Draw a wide illustration (16:9 aspect ratio, 1200×630px).
 ## 品質チェック
 
 ### チェック体制
-- **editorial-check**: 構成・SEO（KW密度1.5〜2%）・論理整合・AI特有エラー・医療情報混入チェック（必須）
-- **fact-check**: 数値データ・固有名詞・研究引用の検証（必須。editorial-checkと並列実行）
+- **Claude Code（editorial-check）**: 文体・構成・重複・読みやすさ・SEO（KW密度1.5〜2%）・論理整合・AI特有エラー（Phase 3で実施）
+- **Claudeが `FC` マーク付与**: 数値・断定・出典不明箇所を明示 → がくがPerplexityで確認（Phase 4）
 - **Geminiレビュー**: 任意。がくが「Geminiにも見せて」と指示した場合のみ実行
 
 ### 文体リファレンス
